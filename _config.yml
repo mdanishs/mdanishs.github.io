@@ -14,7 +14,7 @@ baseurl: ""
 # Of course don't forget to change the username and projectname to YOUR username and project
 
 # Name of website
-title: M Danish Siddiqui
+title: Mohammad Danish Siddiqui
 
 # Short description of your site
 description: Portfolio and work samples of my career being a software engineer and a data scientist.
@@ -67,7 +67,7 @@ footer-link-col: "#404040"
 # Change all these values or delete the ones you don't want.
 # Important: you must keep the "name" parameter, everything else you can remove
 author:
-  name: M Danish Siddiqui
+  name: Mohammad Danish Siddiqui
 
 # Select your active Social Network Links.
 # Uncomment the links you want to show in the footer and add your information to each link.

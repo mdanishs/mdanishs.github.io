@@ -8,23 +8,41 @@ subtitle: Here's what I have been doing with my life
 ----
 ### WEB
 ----
+#### Discus
+###### NextJS AND NODEJS
+- Discus is a platform for aspriring entrepreneurs and professionals to connect with highly skilled industry professionals
+- A very interesting side project which used AWS Chime SDK to provide video calling with in the app, hence removing the need to install any other software
+- Become a mentor: <a href="https://discus.live/discus-for-mentors">https://discus.live/discus-for-mentors</a>
+- Connect with a mentor: <a href="https://discus.live">https://discus.live</a>
+
+<br/>
+#### Wave
+###### REACT AND PYTHON
+- Working as a full-stack developer for Wave Financial Inc
+- We are building one stop solution for small business owners for their accounting and book keeping needs
+- Part of their money-in (invoicing) team
+- visit: <a href="https://waveapps.com/" target="_blank">waveapps.com</a>
+
+<br/>
 #### VISTAJET
 ###### REACT AND .NET
-- Leading the team of 10 developers
-- Built a CMS based React application for an aviation client
-- Architected the CMS components built using **react** and **.Net** to be used by the CMS users
+- **A highly customizable CMS based on .NET and React**
+- The CMS was built for a private chartered jet airline, to manage their marketing campaigns and public facing website
+- This was a very interesting project where each react component worked as a separate app so it can be moved as a WYSIWYG component on the CMS
+- visit: <a href="https://vistajet.com/" target="_blank">vistajet.com</a>
 
 <br/>
 #### VENDIANS
 ###### REACT
-- Lead the front-end team
-- Built the internal portal for the company to log daily hours, manage attendance, leaves and policy announcements.
+- An internal company tool to manage employee project allocations, leaves, and daily logging
 
 <br/>
 #### LIVABLE
 ###### METEOR WITH REACT AND MONGODB
-- Worked as a lead front-end developr with two other resources.
-- A property utility management portal for both residents and property owners. Simplifies the complex process of issuing utility bills to the tenants and dividing the amount according to the occupancy amongst the residents.
+- A property management portal based on 3 micro-frontends, for managers, tenants and admins
+- This solution had a really interesting and complex workflow for managing rental properties and allowing tenants to pay online.
+- Managers could customize the listings by adding amenities and utilities and automating the receiving of payments
+- visit: - visit: <a href="https://livable.com/" target="_blank">livable.com</a>
 
 <br/>
 #### SCB - BILLING DB
@@ -33,13 +51,6 @@ subtitle: Here's what I have been doing with my life
 - Created a module which allowed them to build custom dynamic queries using the UI only.
 - Worked on a XLXS file parser with millions of records to seed data into DB.
 
-<br/>
-#### HELPEDIN
-###### RUBY ON RAILS
-- A skill trading web app where users trade using their skills instead of money
-- Worked as a lead developer and managed one junior developer, finalized the technological decisions and business model
-<br/>
-<br/>
 <br/>
 
 ----
@@ -62,8 +73,7 @@ subtitle: Here's what I have been doing with my life
 ###### ANDROID
 - App that crowd sourced reporting environmental problems and their verification
 - Implemented the api and the client along with the web reports
-<br/>
-<br/>
+
 <br/>
 
 ----
@@ -80,6 +90,7 @@ subtitle: Here's what I have been doing with my life
 ###### UNITY 3D
 - Developed modules for achievement system and in-game store
 - Played a major part in incorporating post production features, bug fixing and animations
+- Visit on <a href="https://www.amazon.ca/Dollys-Bookworm-FREE-Book-Lovers-Puzzle/dp/B00R6X6A2G">Amazon</a>
 
 <br/>
 #### BATTLEGROUND THE ELECTION GAME
@@ -87,14 +98,14 @@ subtitle: Here's what I have been doing with my life
 - Revamped the complete game which was developed on Cocos2D for iOS
 - Updated the AI so that computer could play more efficiently on single player mode
 - Added and improved animations to make game more engaging and appealing
+- Visit <a href="https://apptopia.com/ios/app/573144583/about">Battleground</a>
 
 <br/>
 #### FRUIT FILCH
 ###### JAVA LIBGDX 
 - Worked as an indie developer with team of three people to implement the product idea
 - Played key role in creating the art and assets of the game and taking the gameplay and design decisions
-<br/>
-<br/>
+
 <br/>
 
 ----
