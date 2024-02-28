@@ -12,8 +12,6 @@ subtitle: Here's what I have been doing with my life
 ###### NextJS AND NODEJS
 - Discus is a platform for aspriring entrepreneurs and professionals to connect with highly skilled industry professionals
 - A very interesting side project which used AWS Chime SDK to provide video calling with in the app, hence removing the need to install any other software
-- Become a mentor: <a href="https://discus.live/discus-for-mentors">https://discus.live/discus-for-mentors</a>
-- Connect with a mentor: <a href="https://discus.live">https://discus.live</a>
 
 <br/>
 #### Wave
