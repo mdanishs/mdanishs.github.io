@@ -1,6 +1,6 @@
 ---
 layout: post
-published: false
+published: true
 title: 'Book Notes: Cold Email Manifesto'
 ---
 
@@ -30,7 +30,7 @@ Instead of offering Web Design, offer Magento 2 migrations. Or instead of App De
 
 When it comes to writing your email, one of the first things to address is distinguishing yourself from the hundreds of other cold emails your potential customer gets daily. How do you create an offer that stands out from the crowd? It all comes down to the case study. This is the hardest and most important aspect of cold email, as it conveys exactly what you do. This is how you're going to sell your business to the client. This case study will be the second line of your cold email template, with a custom compliment as your first line.
 
-_Hey John, 
+Hey John, 
 
 Heard about you while looking up Marketing Directors for major hospitals and love your backstory-incredible that you work as a volunteer firefighter as well. 
 
@@ -39,7 +39,7 @@ I specialize in iOS development for the healthcare industry. Recently, we built 
 Interested in improving your patient happiness at Baylor? Let me know and I’ll send over some times to chat. 
 
 Thanks, 
-Alex_
+Alex
 
 That's an example of an email that will generate meetings because you're effectively separating yourself from your competitors. Are any of your competitors going direct to clients with a pitch like this? No! So you're right in front of the client immediately. These are busy people. They don't want to go away and research healthcare app development companies. They don't want to release an RFP and have other people pitch. They want the solution to arrive in front of them, as if by magic! And this is exactly what you achieve by using this cold email strategy. You're offering these people a solution on a silver platter. Now they can make themselves look good to their bosses, and make it seem like they are the
 
@@ -62,12 +62,12 @@ The reason that the breakup email works so well, is that most people in business
 Then you move into the call. It's critically important at this stage, as I just mentioned, to ask some questions, and get some feedback from the client. Here are the actual discovery questions we wrote for an SEO agency. Notice how highly specific they are to the service they offer. Yours should be just as specific to your offer. 
 
 Questions: 
-● Can you tell me more about your company and your role within the organization? What's your main value proposition? Who are your ideal customers? What work do you personally oversee? 
-● What areas of growth are you focusing on for (current year)? What actions on the site are most important to you (white paper download, demo, free trial, etc) KPIs? Any dollar amounts you assign to these conversions? 
-● What issues are you having with your organic search marketing strategy? 
-● When you responded to the email I sent, could you tell me about what came to mind when you thought about us working together? 
-● What would be a slam dunk? 
-● How much are you currently spending on SEO? 
+- Can you tell me more about your company and your role within the organization? What's your main value proposition? Who are your ideal customers? What work do you personally oversee? 
+- What areas of growth are you focusing on for (current year)? What actions on the site are most important to you (white paper download, demo, free trial, etc) KPIs? Any dollar amounts you assign to these conversions? 
+- What issues are you having with your organic search marketing strategy? 
+- When you responded to the email I sent, could you tell me about what came to mind when you thought about us working together? 
+- What would be a slam dunk? 
+- How much are you currently spending on SEO? 
 
 These are just some examples, and you should customize them to sell whatever service you're working with. The important thing is that the questions guide the customer through the sales process. You are gently persuading them into buying, rather than pushing them forcefully. 
 
@@ -81,7 +81,7 @@ The reason for this is that cold email is different from inbound; you're essenti
 
 An agency will compose a cold email, and it will say something like the following: 
 
-_Subject: Quick Question 
+Subject: Quick Question 
 
 Hey Mark, 
 
@@ -90,12 +90,12 @@ Are you looking to do any web development projects? We specialize in all languag
 Let me know what you think.
 
 Regards, 
-Carl _
+Carl 
 
 
 **This email is trash. Why? That's pitching a service**, not pitching an offer. Pitching an offer is about producing something that a customer can buy. For example:
 
-_Subject: Quick Question 
+Subject: Quick Question 
 
 Hey Karen, 
 
@@ -104,7 +104,7 @@ Huge fan of the work you’re doing with Acme tours-loved the last video!
 I specialize in writing emails for tour companies. Recently, one client increased their sales by 141% with just one newsletter. I'd love to do the same for you. Is that something you'd be interested in? 
 
 Thanks,
-Mark_
+Mark
 
 That's the way any company doing cold emails should pitch. Instead of telling the client that they do copywriting, tell them specifically who you work with as a copywriting firm, tell them that you have achieved outstanding results, and then offer to do the same for them.
 
@@ -137,11 +137,11 @@ The great thing about contacting people in niche industries is that no one else 
 ## CHAPTER 6. The Perfect Cold Email
 
 To reiterate, a great cold email consists of five parts: 
-● Subject line 
-● Compliment 
-● Case study 
-● Call to action 
-● Email signature 
+- Subject line 
+- Compliment 
+- Case study 
+- Call to action 
+- Email signature 
 
 We’re going to take a look at each of these in more detail, and I'm going to walk you through everything that you need to know.
 
@@ -196,16 +196,16 @@ The logical place to start is with the subject line. But why is this even import
 Your subject line shouldn't be more than five words, and ideally two words. It needs to prick the curiosity of the recipient so that they absolutely have to click it. This is one area in which it’s fine to be clickbait! You want them to think about what it could be, but not be able to know without opening the email.
 
 But to make this as easy as possible for you, I'm going to give you our 10 top subject lines right now that have proven to be successful: 
-● Quick Question 
-● [Name], Quick Question 
-● Quick Question, [Company Name] 
-● < Relevant emoji > 
-● Question? 
-● Something for you, [Name] 
-● Interview Invite 
-● I’ve got a Story for You 
-● [Name] Recommended I Get in Touch 
-● Intro 
+- Quick Question 
+- [Name], Quick Question 
+- Quick Question, [Company Name] 
+- < Relevant emoji > 
+- Question? 
+- Something for you, [Name] 
+- Interview Invite 
+- I’ve got a Story for You 
+- [Name] Recommended I Get in Touch 
+- Intro 
 
 “Quick Question” is without a doubt the most effective subject line. But it’s certainly worthwhile to test some of the other examples out, as you may experience different results in your particular field. I should mention that the emoji-based example was because we were pitching to game developers-you should use something relevant to another industry.
 
@@ -221,21 +221,21 @@ An example of a custom compliment would be similar to the million dollar email s
 
 Here are several more: 
 
-● Hey Dennis, huge fan of what you're doing at x.ai-we use it all the time internally. 
-● Hey Dennis, came across your thoughts on Google Duplex, it's interesting-I love your approach to company disclosure. 
-● Hey Dennis, been following your career since Visual Revenue, and I'm hugely impressed with what you've built at x.ai 
-● Hey Dennis, been following your story for a while and finally checked your LinkedIn, impressed that you have a patent. 
-● Hey Dennis, love that quote on your LinkedIn about Bjorn-it's amazing how you've incorporated that irreverence into your entire brand. 
-● Hey Marcy, greetings from a fellow UC grad! 
-● Hey Marcy, been following WPromote for a while now and impressed with your background.. amazing that you went from sales associate to director of marketing! 
-● Hey Marcy, love what you're doing at WPromote, especially the work you did with Pied Piper :-P 
-● Hey Marcy, huge fan of Zenni, so when I saw that you ran their campaigns I had to reach out! 
-● Hey Marcy, love the work you did with Weinerschnitzel. 
-● Hey Hayley, love everything about Golden Hippo, and am impressed with your background in IT. 
-● Hey Hayley, found you on LinkedIn and love what you're doing-amazing that you point out how critical listening is, I believe the same thing. 
-● Hey Hayley, came across Golden Hippo and love that quote from Alyssa on your website, it's impressive that you treat the QA team so well. 
-● Hey Hayley, saw you were hiring a business analyst, and wanted to reach out and say congrats on the growth! 
-● Hey Hayley, been following the Golden Hippo Instagram for a while, and love how you treat the IT team.
+- Hey Dennis, huge fan of what you're doing at x.ai-we use it all the time internally. 
+- Hey Dennis, came across your thoughts on Google Duplex, it's interesting-I love your approach to company disclosure. 
+- Hey Dennis, been following your career since Visual Revenue, and I'm hugely impressed with what you've built at x.ai 
+- Hey Dennis, been following your story for a while and finally checked your LinkedIn, impressed that you have a patent. 
+- Hey Dennis, love that quote on your LinkedIn about Bjorn-it's amazing how you've incorporated that irreverence into your entire brand. 
+- Hey Marcy, greetings from a fellow UC grad! 
+- Hey Marcy, been following WPromote for a while now and impressed with your background.. amazing that you went from sales associate to director of marketing! 
+- Hey Marcy, love what you're doing at WPromote, especially the work you did with Pied Piper :-P 
+- Hey Marcy, huge fan of Zenni, so when I saw that you ran their campaigns I had to reach out! 
+- Hey Marcy, love the work you did with Weinerschnitzel. 
+- Hey Hayley, love everything about Golden Hippo, and am impressed with your background in IT. 
+- Hey Hayley, found you on LinkedIn and love what you're doing-amazing that you point out how critical listening is, I believe the same thing. 
+- Hey Hayley, came across Golden Hippo and love that quote from Alyssa on your website, it's impressive that you treat the QA team so well. 
+- Hey Hayley, saw you were hiring a business analyst, and wanted to reach out and say congrats on the growth! 
+- Hey Hayley, been following the Golden Hippo Instagram for a while, and love how you treat the IT team.
 
 A well-written first line will have just enough information to indicate that you've personalized it, but not so much that you appear to be a stalker! Keep that in mind-the shorter, the better. One sentence is enough.
 
@@ -293,7 +293,7 @@ Response rate is the key benchmark. If you're getting responses then you're well
 
 Another key issue is bounce rate. You must ensure that this is kept under 8% at all times. Make sure that you verify your emails before sending, and constantly review the quality of your email leads. If you have inconsistent issues with your bounce rate, it's time to find a new lead database. There's nothing worse than putting effort in and knowing that it’s been completely wasted, so you really need to keep on top of this issue.
 
-For every 100 emails that you send, try 50% with one subject line and 50% with another. ● Try different case studies and experiment with the wording. ● Change the sending times for different days and hours. ● Swap follow-up emails, try different wording and approaches.
+For every 100 emails that you send, try 50% with one subject line and 50% with another. - Try different case studies and experiment with the wording. - Change the sending times for different days and hours. - Swap follow-up emails, try different wording and approaches.
 
 For each of these strategies, remove anything that turns out to be ineffective, and even do more testing with different proportions and combinations. The choice is yours, but what you shouldn't do is proceed to cold email without measuring the process and regularly attempting different approaches.
 
