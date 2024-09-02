@@ -30,7 +30,7 @@ Instead of offering Web Design, offer Magento 2 migrations. Or instead of App De
 
 When it comes to writing your email, one of the first things to address is distinguishing yourself from the hundreds of other cold emails your potential customer gets daily. How do you create an offer that stands out from the crowd? It all comes down to the case study. This is the hardest and most important aspect of cold email, as it conveys exactly what you do. This is how you're going to sell your business to the client. This case study will be the second line of your cold email template, with a custom compliment as your first line.
 
-Hey John, 
+_Hey John, 
 
 Heard about you while looking up Marketing Directors for major hospitals and love your backstory-incredible that you work as a volunteer firefighter as well. 
 
@@ -39,7 +39,7 @@ I specialize in iOS development for the healthcare industry. Recently, we built 
 Interested in improving your patient happiness at Baylor? Let me know and I’ll send over some times to chat. 
 
 Thanks, 
-Alex 
+Alex_
 
 That's an example of an email that will generate meetings because you're effectively separating yourself from your competitors. Are any of your competitors going direct to clients with a pitch like this? No! So you're right in front of the client immediately. These are busy people. They don't want to go away and research healthcare app development companies. They don't want to release an RFP and have other people pitch. They want the solution to arrive in front of them, as if by magic! And this is exactly what you achieve by using this cold email strategy. You're offering these people a solution on a silver platter. Now they can make themselves look good to their bosses, and make it seem like they are the
 
@@ -81,7 +81,7 @@ The reason for this is that cold email is different from inbound; you're essenti
 
 An agency will compose a cold email, and it will say something like the following: 
 
-Subject: Quick Question 
+_Subject: Quick Question 
 
 Hey Mark, 
 
@@ -90,12 +90,12 @@ Are you looking to do any web development projects? We specialize in all languag
 Let me know what you think.
 
 Regards, 
-Carl 
+Carl _
 
 
 **This email is trash. Why? That's pitching a service**, not pitching an offer. Pitching an offer is about producing something that a customer can buy. For example:
 
-Subject: Quick Question 
+_Subject: Quick Question 
 
 Hey Karen, 
 
@@ -104,7 +104,7 @@ Huge fan of the work you’re doing with Acme tours-loved the last video!
 I specialize in writing emails for tour companies. Recently, one client increased their sales by 141% with just one newsletter. I'd love to do the same for you. Is that something you'd be interested in? 
 
 Thanks,
-Mark
+Mark_
 
 That's the way any company doing cold emails should pitch. Instead of telling the client that they do copywriting, tell them specifically who you work with as a copywriting firm, tell them that you have achieved outstanding results, and then offer to do the same for them.
 
