@@ -1,7 +1,7 @@
 ---
 layout: page
 title: Achievements
-subtitle: Just showing of my fame
+subtitle: Just showing off my fame
 ---
 <br/>
 #### Winner - Google Develop for Good Hackathon, Green Category 2012
