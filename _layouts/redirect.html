@@ -1,0 +1,22 @@
+---
+---
+{%- comment -%}
+  Client-side redirect stub for a URL that moved.
+
+  Set `permalink` to the OLD url and `redirect_to` to the new one. Kept out of
+  the sitemap and marked noindex so the old URL drops out of the index while
+  still passing anyone who follows a stale link through to the right page.
+{%- endcomment -%}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Redirecting…</title>
+  <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+  <meta name="robots" content="noindex, follow">
+  <meta http-equiv="refresh" content="0; url={{ page.redirect_to | absolute_url }}">
+</head>
+<body>
+  <p>This page moved to <a href="{{ page.redirect_to | absolute_url }}">{{ page.redirect_to | absolute_url }}</a>.</p>
+</body>
+</html>

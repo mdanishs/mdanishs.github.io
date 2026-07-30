@@ -1,0 +1,108 @@
+# Roles, newest first. Rendered on /experience and used for the Person
+# schema's `worksFor` field.
+#
+# `end:` blank means "present". `start:` blank renders as "Now" with no date
+# range, for work that isn't a dated employment record.
+
+- company: "Intuit"
+  url: "https://www.intuit.com/"
+  role: "Senior Frontend Engineer"
+  start: "2024"
+  end:
+  location: "Toronto, Ontario"
+  summary: >
+    Senior frontend engineer working on AI-driven customer experiences and the
+    quality infrastructure behind them.
+  highlights:
+    - "Designed AI-driven dynamic onboarding experiences that contributed to $300M in sales."
+    - "Led frontend test automation, cutting a regression cycle from 3 days to 4 hours."
+    - "Built reusable component systems adopted across teams, and ran workshops to level up junior engineers."
+
+- company: "HireDoc"
+  url: "https://hiredoc.co"
+  role: "Founder"
+  start:
+  end:
+  location: "Milton, Ontario"
+  summary: >
+    Built and launched an interview-based resume tool for software engineers who
+    moved to Canada or the US. Instead of paraphrasing what is already on the
+    page, it interviews you to surface the impact your resume left out.
+  highlights:
+    - "Shipped the full product solo — interview engine, resume generation, payments, and the diagnostic quiz at quiz.hiredoc.co."
+    - "Grounded the product in 400+ manual resume reviews of internationally trained engineers, so the questions target the gaps that actually cost people interviews."
+    - "Candidates who had gone months without a callback began averaging roughly three interview invitations per week after repositioning."
+
+- company: "Wave HQ"
+  url: "https://www.waveapps.com/"
+  role: "Software Engineer"
+  start: "Mar 2022"
+  end: "Sep 2024"
+  location: "Toronto, Ontario"
+  summary: >
+    Accounting and bookkeeping for small business owners. I worked on the
+    money-in (invoicing) team, across both the mobile app and the web platform.
+  highlights:
+    - "Led the development and launch of a cross-platform mobile app using React Native and Apollo, serving roughly 1M users."
+    - "Engineered and maintained APIs for new and existing invoicing features using Python Django, gRPC, GraphQL, and Apollo."
+    - "Partnered with PMs and designers to ship auto-payments and recurring invoices across mobile and web, growing the user base and improving retention."
+    - "Led a monetization initiative moving free users to paid plans through phased rollouts for new and grandfathered users, without hurting satisfaction."
+
+- company: "Seera Group"
+  url: "https://seera.sa/"
+  role: "Senior Frontend Engineer"
+  start: "Nov 2019"
+  end: "Feb 2022"
+  location: "Dubai, UAE"
+  summary: >
+    Senior frontend engineer at a travel and tourism group, focused on getting a
+    legacy system onto a modern stack without disrupting users.
+  highlights:
+    - "Led the migration of a legacy system to Next.js and MobX, ensuring seamless deployments and minimal user disruption."
+    - "Separated the monolith into SDK and user interface layers, improving reusability and simplifying maintenance."
+    - "Built a reusable component library that cut development time for complex form-based workflows by 40%."
+    - "Worked with UI/UX on user research and feedback analysis to drive data-informed product iterations."
+
+- company: "VentureDive"
+  url: "https://venturedive.com/"
+  role: "Senior Software Engineer"
+  start: "Mar 2018"
+  end: "Nov 2019"
+  location: "Karachi, Pakistan"
+  summary: >
+    Joined as a Software Engineer and moved into a Senior Software Engineer role
+    within four months, leading frontend delivery for internal products and
+    client work.
+  highlights:
+    - "Led development of the internal product used company-wide to manage employee project allocations."
+    - "Hit a very strict deadline leading a front-end team through a project for a highly valued client."
+    - "Managed sprints and deliverables working closely with product managers and design."
+    - "Ran demos and client visits, and mentored juniors on code quality, career progression, and goals."
+
+- company: "Proleadsoft"
+  url:
+  role: "Software Engineer"
+  start: "Apr 2016"
+  end: "Mar 2018"
+  location: "San Francisco, CA"
+  summary: >
+    Product engineering on a React and Meteor property management platform,
+    with a focus on making it scale.
+  highlights:
+    - "Initiated the product scalability effort by introducing a micro-services and micro-frontend approach."
+    - "Architected a common SDK used by every micro-frontend."
+    - "Improved site performance and code quality through reusable components and MongoDB query optimization."
+
+- company: "Earlier work"
+  url:
+  role: "Software Engineer"
+  start: "2013"
+  end: "2016"
+  location: "Karachi, Pakistan"
+  summary: >
+    Where it started — enterprise reporting tools, cross-platform mobile apps,
+    and shipped commercial games.
+  highlights:
+    - "Standard Chartered Bank — a reporting tool with a UI-driven custom query builder, plus an XLSX parser handling millions of records."
+    - "AirMed International — a NativeScript membership app with custom native plugins shared across the team."
+    - "Shipped commercial games including Dolly's Bookworm (Unity) and Battleground (Cocos2D)."

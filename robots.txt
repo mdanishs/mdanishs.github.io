@@ -1,0 +1,82 @@
+---
+layout: null
+permalink: /robots.txt
+sitemap: false
+---
+# https://mdanishs.com/robots.txt
+
+# Everything on this site is meant to be found, quoted, and cited — by search
+# engines and by answer engines alike. Nothing here is gated, so every crawler
+# below is explicitly allowed rather than left to a default.
+
+User-agent: *
+Allow: /
+
+# --- Search crawlers -------------------------------------------------------
+
+User-agent: Googlebot
+Allow: /
+
+User-agent: Bingbot
+Allow: /
+
+User-agent: DuckDuckBot
+Allow: /
+
+# --- Answer engines / LLM crawlers -----------------------------------------
+# Google-Extended and Applebot-Extended control AI grounding separately from
+# ordinary search indexing; allowing them is what makes this site eligible to
+# be cited in AI Overviews and Siri/Spotlight answers.
+
+User-agent: Google-Extended
+Allow: /
+
+User-agent: Applebot
+Allow: /
+
+User-agent: Applebot-Extended
+Allow: /
+
+User-agent: GPTBot
+Allow: /
+
+User-agent: OAI-SearchBot
+Allow: /
+
+User-agent: ChatGPT-User
+Allow: /
+
+User-agent: ClaudeBot
+Allow: /
+
+User-agent: Claude-User
+Allow: /
+
+User-agent: Claude-SearchBot
+Allow: /
+
+User-agent: anthropic-ai
+Allow: /
+
+User-agent: PerplexityBot
+Allow: /
+
+User-agent: Perplexity-User
+Allow: /
+
+User-agent: meta-externalagent
+Allow: /
+
+User-agent: Bytespider
+Allow: /
+
+User-agent: Amazonbot
+Allow: /
+
+User-agent: CCBot
+Allow: /
+
+User-agent: cohere-ai
+Allow: /
+
+Sitemap: {{ site.url }}/sitemap.xml

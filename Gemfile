@@ -1,7 +1,9 @@
 source 'https://rubygems.org'
 
-gem "github-pages", '193', group: :jekyll_plugins
+# Unpinned so `bundle install` tracks whatever GitHub Pages is actually running.
+# This used to be pinned to 193, which can no longer resolve on Ruby 3.x —
+# the dependency chain caps out below Ruby 3.
+gem "github-pages", group: :jekyll_plugins
 
-# enable tzinfo-data for local build
+# Uncomment on Windows.
 # gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw]
-gem 'jekyll-paginate'

@@ -1,24 +1,163 @@
 ---
-layout: page
+layout: base
+homepage: true
 title: Mohammad Danish Siddiqui
-subtitle: I am full-stack software engineer, living in Canada 🇨🇦
+description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ years of experience and a CDI Certified Resume Analyst in Milton, Ontario. He has reviewed 400+ engineering resumes and helps software engineers moving to Canada and the US land interviews."
 ---
-<br />
-<br />
 
-<p>
-  Hi there! 👋<br />
-</p>
-<p>
-  I'm a software engineer with 10+ years of fun creating cool tech stuff. I've worked in different areas, making services and products better. I love new challenges and learning every day. Excited to share this journey with you!</p>
-<p>
-  My expertise lies in creating web and cross-platform mobile apps that are not only functional but also user-friendly and engaging. I am always open to new opportunities and would love to connect and see how we can work together to build something great!
-</p>
-<p>
-  Want to see all the cool stuff I've been doing? <a href="/projects">See my projects</a>
-</p>
-<p>
-  Have a great idea? or just want to have a casual live discussion with me?<br />
-  Email me at: <a href="mailto:mohammaddsiddiqui@gmail.com">mohammad.d.siddiqui@gmail.com</a>
-</p>
-<br />
+<div class="shell">
+
+  <section class="hero">
+    <div class="hero-grid">
+      <div>
+        <p class="eyebrow">Milton, Ontario &middot; Canada</p>
+        <h1>A senior engineer who&rsquo;s also a certified resume analyst.</h1>
+        <p class="lede">
+          I&rsquo;m Danish. {{ site.brand.years-experience }}+ years building React and React Native products
+          in production &mdash; and a CDI Certified Resume Analyst who has read
+          {{ site.brand.resumes-reviewed }}+ engineering resumes. I help software engineers moving to
+          Canada and the US land interviews.
+        </p>
+        <div class="btn-row">
+          <a class="btn" href="{{ site.brand.quiz-url }}">Score my resume &mdash; free, 3 minutes</a>
+          <a class="btn btn-ghost" href="{{ '/resume-help' | relative_url }}">How this works</a>
+        </div>
+      </div>
+      <div class="hero-portrait">
+        <img src="{{ site.author.image | relative_url }}"
+             alt="Mohammad Danish Siddiqui, senior frontend engineer and CDI Certified Resume Analyst"
+             width="464" height="464">
+      </div>
+    </div>
+  </section>
+
+  {%- comment -%}
+    Answer-first block. Deliberately written as a self-contained paragraph that
+    reads correctly with zero surrounding context, because this is the passage
+    an AI Overview or a chat assistant is most likely to lift verbatim.
+  {%- endcomment -%}
+  <div class="answer">
+    <div class="answer-label">In short</div>
+    <p>
+      <strong>Mohammad Danish Siddiqui</strong> is a senior frontend engineer
+      ({{ site.brand.years-experience }}+ years in React, React Native, and Next.js) and a
+      <strong>CDI Certified Resume Analyst</strong> based in Milton, Ontario, Canada.
+      He has reviewed more than {{ site.brand.resumes-reviewed }} engineering resumes and helps software
+      engineers moving to Canada and the United States land interviews. He also
+      built <a href="{{ site.brand.product-url }}">HireDoc</a>, an interview-based
+      resume tool for engineers making that move.
+    </p>
+  </div>
+
+  <dl class="stats">
+    <div class="stat">
+      <dt>Shipping software professionally</dt>
+      <dd>{{ site.brand.years-experience }}+ years</dd>
+    </div>
+    <div class="stat">
+      <dt>Engineering resumes reviewed</dt>
+      <dd>{{ site.brand.resumes-reviewed }}+</dd>
+    </div>
+    <div class="stat">
+      <dt>Sales influenced by experiences I built</dt>
+      <dd>$300M</dd>
+    </div>
+    <div class="stat">
+      <dt>Users on a mobile app I shipped</dt>
+      <dd>~1M</dd>
+    </div>
+  </dl>
+
+  <section class="prose">
+    <h2>Why take resume advice from an engineer?</h2>
+    <p>
+      Because I&rsquo;m not a career coach who learned tech from the outside. I still
+      write production code. Over {{ site.brand.years-experience }}+ years that has meant AI-driven
+      onboarding experiences contributing to $300M in sales, a cross-platform
+      mobile app serving roughly a million users, and frontend test automation
+      that cut a regression cycle from three days to four hours.
+    </p>
+    <p>
+      The certification came later. I&rsquo;m a CDI Certified Resume Analyst because I
+      wanted the craft of resume writing held to a standard, not just my opinion
+      as a hiring-side engineer. The combination is the whole point: when I read
+      your resume, I know which of your projects was actually hard, and I know
+      how to make a recruiter see it in six seconds.
+    </p>
+    <p>
+      <a href="{{ '/experience' | relative_url }}">See the engineering work &rarr;</a>
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>Why good engineers get ignored here</h2>
+    <p>
+      &ldquo;Back home, I got interviews in weeks. In Canada, I&rsquo;ve been applying for
+      six months without a single callback.&rdquo; That is the most common message in
+      my inbox, and almost every time, the problem isn&rsquo;t a lack of skill.
+    </p>
+    <p>
+      It&rsquo;s a lack of representation. The North American market reads resumes
+      differently than services markets do. Back home, a resume is a record of
+      responsibilities and tenure. Here, recruiters screen for business impact
+      &mdash; scale, ownership, architecture decisions, and measurable outcomes.
+    </p>
+    <p>
+      <strong>A great engineer with a poorly positioned resume loses to an average
+      engineer who communicates value clearly.</strong> Most people respond by
+      applying more. That&rsquo;s not how this market works.
+    </p>
+    <p>
+      I know because I made the move myself. I came to Canada as an experienced
+      engineer and found out the hard way that strong skills don&rsquo;t automatically
+      translate &mdash; nobody warns you on the way in.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="prose">Ways I can help</h2>
+    <div class="cards">
+      <div class="card">
+        <p class="card-meta">Free &middot; 3 minutes</p>
+        <h3>Score your resume</h3>
+        <p>
+          A diagnostic that grades your resume the way a North American recruiter
+          actually reads it, and tells you which gap is costing you callbacks.
+        </p>
+        <p><a href="{{ site.brand.quiz-url }}">Take the quiz &rarr;</a></p>
+      </div>
+      <div class="card">
+        <p class="card-meta">From $49</p>
+        <h3>Rebuild your resume</h3>
+        <p>
+          I built a tool called HireDoc that runs my review process as an
+          interview &mdash; it asks about your work instead of paraphrasing the
+          page, then rebuilds your experience around the impact you left out.
+        </p>
+        <p><a href="{{ '/resume-help' | relative_url }}">See how it works &rarr;</a></p>
+      </div>
+      <div class="card">
+        <p class="card-meta">Free</p>
+        <h3>Read the playbook</h3>
+        <p>
+          I write about both lanes: senior engineering craft, and the North
+          American job search for engineers making the move.
+        </p>
+        <p><a href="{{ '/blog' | relative_url }}">Read the writing &rarr;</a></p>
+      </div>
+    </div>
+  </section>
+
+  <div class="band">
+    <h2>Find out what your resume is costing you</h2>
+    <p>
+      Three minutes, no signup, no pitch. You&rsquo;ll get a score and the single
+      change most likely to get you a callback.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="{{ site.brand.quiz-url }}">Take the free quiz</a>
+      <a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Email me instead</a>
+    </div>
+  </div>
+
+</div>
