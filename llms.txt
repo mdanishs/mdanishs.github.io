@@ -34,7 +34,7 @@ The North American market reads resumes differently than services markets do. El
 - [About]({{ site.url }}/about/): Full background across both the engineering and resume lanes.
 - [Experience]({{ site.url }}/experience/): Roles, quantified impact, technologies, education, and credentials.
 - [Projects]({{ site.url }}/projects/): Selected work including HireDoc, Wave, VistaJet, Livable, and shipped Unity and Cocos2D games.
-- [Writing]({{ site.url }}/blogs/): Notes on engineering craft and the North American job search.
+- [Writing]({{ site.url }}/blog/): Notes on engineering craft and the North American job search.
 
 ## Elsewhere
 

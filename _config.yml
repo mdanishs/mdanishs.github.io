@@ -50,7 +50,7 @@ navbar-links:
   Experience: "experience"
   Projects: "projects"
   About: "about"
-  Writing: "blogs"
+  Writing: "blog"
 
 # Primary call to action, rendered as a button in the nav
 navbar-cta:
@@ -85,7 +85,7 @@ url-pretty: "mdanishs.com"
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
-permalink: /:year-:month-:day-:title/
+permalink: /blog/:title/
 excerpt_length: 45
 
 kramdown:
