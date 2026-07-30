@@ -6,8 +6,8 @@ url: "https://mdanishs.com"
 baseurl: ""
 
 title: "Mohammad Danish Siddiqui"
-tagline: "Resume strategy for internationally trained engineers"
-description: "Mohammad Danish Siddiqui is a senior frontend engineer and CDI Certified Resume Analyst in Milton, Ontario. He helps internationally trained software engineers in Canada and the US turn stalled job searches into interviews."
+tagline: "Senior engineer and certified resume analyst"
+description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ years of experience and a CDI Certified Resume Analyst in Milton, Ontario. He helps software engineers moving to Canada and the US land interviews."
 
 # Shown in the browser tab between page title and site title
 title-separator: "·"
@@ -115,6 +115,7 @@ exclude:
   - README.md
   - Vagrantfile
   - staticman.yml
+  - tools
 
 plugins:
   - jekyll-sitemap

@@ -62,6 +62,17 @@ Then open <http://localhost:4000>.
 | `img/og-card.png` | 1200×630 social share card |
 | `img/favicon.png` | Favicon |
 
+`og-card.png` and `favicon.png` are generated. After replacing `img/danish.jpg`
+(or changing the card headline), regenerate them:
+
+```sh
+pip install Pillow
+python3 tools/make-images.py
+```
+
+The script center-crops whatever it finds at `img/danish.jpg`, so the portrait
+does not need to be square.
+
 ---
 
 Originally built on [Beautiful Jekyll](https://beautifuljekyll.com) by Dean

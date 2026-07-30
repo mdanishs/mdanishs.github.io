@@ -4,6 +4,20 @@
 # `end:` blank means "present". `start:` blank renders as "Now" with no date
 # range, for work that isn't a dated employment record.
 
+- company: "Intuit"
+  url: "https://www.intuit.com/"
+  role: "Senior Frontend Engineer"
+  start: "2024"
+  end:
+  location: "Toronto, Ontario"
+  summary: >
+    Senior frontend engineer working on AI-driven customer experiences and the
+    quality infrastructure behind them.
+  highlights:
+    - "Designed AI-driven dynamic onboarding experiences that contributed to $300M in sales."
+    - "Led frontend test automation, cutting a regression cycle from 3 days to 4 hours."
+    - "Built reusable component systems adopted across teams, and ran workshops to level up junior engineers."
+
 - company: "HireDoc"
   url: "https://hiredoc.co"
   role: "Founder"
@@ -18,20 +32,6 @@
     - "Shipped the full product solo — interview engine, resume generation, payments, and the diagnostic quiz at quiz.hiredoc.co."
     - "Grounded the product in 400+ manual resume reviews of internationally trained engineers, so the questions target the gaps that actually cost people interviews."
     - "Candidates who had gone months without a callback began averaging roughly three interview invitations per week after repositioning."
-
-- company: "Intuit"
-  url: "https://www.intuit.com/"
-  role: "Senior Frontend Engineer"
-  start: "2024"
-  end:
-  location: "Toronto, Ontario"
-  summary: >
-    Senior frontend engineer working on AI-driven customer experiences and the
-    quality infrastructure behind them.
-  highlights:
-    - "Designed AI-driven dynamic onboarding experiences that contributed to $300M in sales."
-    - "Led frontend test automation, cutting a regression cycle from 3 days to 4 hours."
-    - "Built reusable component systems adopted across teams, and ran workshops to level up junior engineers."
 
 - company: "Wave HQ"
   url: "https://www.waveapps.com/"
