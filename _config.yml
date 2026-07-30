@@ -39,7 +39,7 @@ brand:
   resumes-reviewed: "400"
   product-name: "HireDoc"
   product-url: "https://hiredoc.co"
-  quiz-url: "https://quiz.hiredoc.co"
+  quiz-url: "https://mohammad-danish-npboaynr.scoreapp.com"
 
 # ---------------------------------------------------------------------------
 # Navigation
@@ -52,10 +52,10 @@ navbar-links:
   About: "about"
   Writing: "blog"
 
-# Primary call to action, rendered as a button in the nav
+# Primary call to action, rendered as a button in the nav.
+# Points at brand.quiz-url unless you set an explicit `url:` here.
 navbar-cta:
   label: "Take the quiz"
-  url: "https://quiz.hiredoc.co"
 
 # ---------------------------------------------------------------------------
 # Social links (also emitted as sameAs in Person schema)

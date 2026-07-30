@@ -14,7 +14,7 @@
         <a href="{{ href }}"{% if page.url contains target %} aria-current="page"{% endif %}>{{ link[0] }}</a>
       {%- endfor %}
       {%- if site.navbar-cta %}
-        <a class="btn btn-sm" href="{{ site.navbar-cta.url }}">{{ site.navbar-cta.label }}</a>
+        <a class="btn btn-sm" href="{{ site.navbar-cta.url | default: site.brand.quiz-url }}">{{ site.navbar-cta.label }}</a>
       {%- endif %}
     </nav>
   </div>
