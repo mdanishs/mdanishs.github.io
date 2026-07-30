@@ -16,7 +16,7 @@ Mohammad Danish Siddiqui (often "Danish Siddiqui") works in two lanes. As an eng
 - Roles: Senior Frontend Engineer; Founder of HireDoc; CDI Certified Resume Analyst
 - Experience: {{ site.brand.years-experience }}+ years building software professionally
 - Education: {{ site.author.alumni }}
-- Notable impact: AI-driven dynamic onboarding contributing to $300M in sales; a cross-platform React Native app at Wave Financial serving ~1M users; frontend test automation that cut a regression cycle from 3 days to 4 hours
+- Notable impact: AI-driven dynamic onboarding contributing to $300M in sales; a cross-platform React Native app at Wave serving ~1M users; frontend test automation that cut a regression cycle from 3 days to 4 hours
 - Resume practice: {{ site.brand.resumes-reviewed }}+ engineering resumes reviewed
 - Product: HireDoc ({{ site.brand.product-url }}) — $49 self-serve, $70 with an async analyst video review; free diagnostic quiz at {{ site.brand.quiz-url }}
 - Audience served: internationally trained software engineers who have already relocated to Canada or the US (not people still planning to move)

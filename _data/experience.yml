@@ -1,12 +1,13 @@
 # Roles, newest first. Rendered on /experience and used for the Person
-# schema's `worksFor` / `hasOccupation` fields.
+# schema's `worksFor` field.
 #
-# `end: ` left blank means "present".
+# `end:` blank means "present". `start:` blank renders as "Now" with no date
+# range, for work that isn't a dated employment record.
 
 - company: "HireDoc"
   url: "https://hiredoc.co"
   role: "Founder"
-  start: "2025"
+  start:
   end:
   location: "Milton, Ontario"
   summary: >
@@ -21,7 +22,7 @@
 - company: "Intuit"
   url: "https://www.intuit.com/"
   role: "Senior Frontend Engineer"
-  start: "2023"
+  start: "2024"
   end:
   location: "Toronto, Ontario"
   summary: >
@@ -32,44 +33,76 @@
     - "Led frontend test automation, cutting a regression cycle from 3 days to 4 hours."
     - "Built reusable component systems adopted across teams, and ran workshops to level up junior engineers."
 
-- company: "Wave Financial"
+- company: "Wave HQ"
   url: "https://www.waveapps.com/"
-  role: "Full-Stack Engineer"
-  start: "2021"
-  end: "2023"
+  role: "Software Engineer"
+  start: "Mar 2022"
+  end: "Sep 2024"
   location: "Toronto, Ontario"
   summary: >
-    Full-stack engineer on the money-in (invoicing) team at Wave, building
-    accounting and bookkeeping tools for small business owners.
+    Accounting and bookkeeping for small business owners. I worked on the
+    money-in (invoicing) team, across both the mobile app and the web platform.
   highlights:
-    - "Built and shipped a cross-platform React Native mobile app serving roughly 1M users."
-    - "Optimized GraphQL and REST APIs powering invoicing flows."
-    - "Led monetization initiatives that moved revenue on the invoicing surface."
+    - "Led the development and launch of a cross-platform mobile app using React Native and Apollo, serving roughly 1M users."
+    - "Engineered and maintained APIs for new and existing invoicing features using Python Django, gRPC, GraphQL, and Apollo."
+    - "Partnered with PMs and designers to ship auto-payments and recurring invoices across mobile and web, growing the user base and improving retention."
+    - "Led a monetization initiative moving free users to paid plans through phased rollouts for new and grandfathered users, without hurting satisfaction."
 
-- company: "VistaJet"
-  url: "https://www.vistajet.com/"
-  role: "Frontend Engineer"
-  start: "2019"
-  end: "2021"
-  location: "Remote"
+- company: "Seera Group"
+  url: "https://seera.sa/"
+  role: "Senior Frontend Engineer"
+  start: "Nov 2019"
+  end: "Feb 2022"
+  location: "Dubai, UAE"
   summary: >
-    Built a highly customizable CMS for a private chartered jet airline, used to
-    run marketing campaigns and the public-facing website.
+    Senior frontend engineer at a travel and tourism group, focused on getting a
+    legacy system onto a modern stack without disrupting users.
   highlights:
-    - "Architected each React component as an independently mountable app so marketers could drag them around a WYSIWYG editor."
-    - "Integrated the React frontend with a .NET content backend."
+    - "Led the migration of a legacy system to Next.js and MobX, ensuring seamless deployments and minimal user disruption."
+    - "Separated the monolith into SDK and user interface layers, improving reusability and simplifying maintenance."
+    - "Built a reusable component library that cut development time for complex form-based workflows by 40%."
+    - "Worked with UI/UX on user research and feedback analysis to drive data-informed product iterations."
 
-- company: "Earlier roles"
-  url:
-  role: "Software Engineer → Senior Software Engineer"
-  start: "2013"
-  end: "2019"
+- company: "VentureDive"
+  url: "https://venturedive.com/"
+  role: "Senior Software Engineer"
+  start: "Mar 2018"
+  end: "Nov 2019"
   location: "Karachi, Pakistan"
   summary: >
-    A decade of product work before moving to Canada — property management
-    platforms, banking tools, mobile apps, and shipped Unity and Cocos2D games.
+    Joined as a Software Engineer and moved into a Senior Software Engineer role
+    within four months, leading frontend delivery for internal products and
+    client work.
   highlights:
-    - "Livable — a property management portal built as three micro-frontends for managers, tenants, and admins, with online rent payments."
+    - "Led development of the internal product used company-wide to manage employee project allocations."
+    - "Hit a very strict deadline leading a front-end team through a project for a highly valued client."
+    - "Managed sprints and deliverables working closely with product managers and design."
+    - "Ran demos and client visits, and mentored juniors on code quality, career progression, and goals."
+
+- company: "Proleadsoft"
+  url:
+  role: "Software Engineer"
+  start: "Apr 2016"
+  end: "Mar 2018"
+  location: "San Francisco, CA"
+  summary: >
+    Product engineering on a React and Meteor property management platform,
+    with a focus on making it scale.
+  highlights:
+    - "Initiated the product scalability effort by introducing a micro-services and micro-frontend approach."
+    - "Architected a common SDK used by every micro-frontend."
+    - "Improved site performance and code quality through reusable components and MongoDB query optimization."
+
+- company: "Earlier work"
+  url:
+  role: "Software Engineer"
+  start: "2013"
+  end: "2016"
+  location: "Karachi, Pakistan"
+  summary: >
+    Where it started — enterprise reporting tools, cross-platform mobile apps,
+    and shipped commercial games.
+  highlights:
     - "Standard Chartered Bank — a reporting tool with a UI-driven custom query builder, plus an XLSX parser handling millions of records."
     - "AirMed International — a NativeScript membership app with custom native plugins shared across the team."
     - "Shipped commercial games including Dolly's Bookworm (Unity) and Battleground (Cocos2D)."

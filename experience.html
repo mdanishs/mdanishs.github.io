@@ -3,7 +3,7 @@ layout: base
 permalink: /experience/
 title: Experience
 seo-title: "Experience — Mohammad Danish Siddiqui, Senior Frontend Engineer"
-description: "12+ years of software engineering: AI-driven onboarding contributing to $300M in sales at Intuit, a ~1M user mobile app at Wave Financial, and a CMS for VistaJet. React, React Native, Next.js, Node.js."
+description: "12+ years of software engineering: AI-driven onboarding contributing to $300M in sales at Intuit, a ~1M user mobile app at Wave, and a legacy-to-Next.js migration at Seera Group. React, React Native, Next.js, Node.js."
 ---
 
 <div class="shell">
@@ -12,7 +12,7 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
     <p class="eyebrow">Experience</p>
     <h1>{{ site.brand.years-experience }}+ years of shipping things people use.</h1>
     <p class="lede">
-      Frontend-heavy full-stack work across fintech, aviation, property
+      Frontend-heavy full-stack work across fintech, travel, property
       management, banking, and games &mdash; plus the product I run now.
     </p>
   </div>
@@ -21,8 +21,8 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
     <div class="answer-label">Highlights</div>
     <p>
       Designed AI-driven dynamic onboarding experiences that contributed to
-      <strong>$300M in sales</strong>. Built a cross-platform React Native app at
-      Wave Financial serving <strong>roughly 1M users</strong>. Led frontend test
+      <strong>$300M in sales</strong>. Led the launch of a cross-platform React
+      Native app at Wave serving <strong>roughly 1M users</strong>. Led frontend test
       automation that cut a regression cycle from <strong>three days to four
       hours</strong>. Founded <a href="{{ site.brand.product-url }}">HireDoc</a> after
       {{ site.brand.resumes-reviewed }}+ resume reviews.
@@ -35,7 +35,11 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
     {%- for role in site.data.experience %}
     <article class="role">
       <div class="role-when">
-        {{ role.start }}&ndash;{% if role.end %}{{ role.end }}{% else %}Present{% endif %}
+        {%- if role.start -%}
+          {{ role.start }}&ndash;{% if role.end %}{{ role.end }}{% else %}Present{% endif %}
+        {%- else -%}
+          Now
+        {%- endif -%}
         {%- if role.location %}<span class="role-where">{{ role.location }}</span>{% endif %}
       </div>
       <div>
@@ -61,14 +65,14 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
   <section class="prose">
     <h2>What I work with</h2>
     <p>
-      <strong>Frontend:</strong> React, React Native, Next.js, TypeScript, modern
-      JavaScript, component system design.<br>
-      <strong>Backend:</strong> Node.js, GraphQL, Python and Django, REST API
-      design, microservices.<br>
+      <strong>Frontend:</strong> React, React Native, Next.js, TypeScript, Redux,
+      MobX, modern JavaScript, component libraries and micro-frontends.<br>
+      <strong>Backend:</strong> Node.js, GraphQL and Apollo, Python and Django,
+      gRPC, REST API design, microservices, MongoDB.<br>
       <strong>Quality:</strong> test automation, CI pipelines, data-driven
       experimentation and A/B testing.<br>
-      <strong>Earlier:</strong> .NET, PHP, Unity 3D, Cocos2D, NativeScript,
-      Android, iOS.
+      <strong>Earlier:</strong> Meteor, .NET, PHP, Unity 3D, Cocos2D,
+      NativeScript, Android, iOS.
     </p>
   </section>
 
@@ -77,7 +81,9 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
     <p>
       <strong>CDI Certified Resume Analyst</strong> &mdash; Career Directors
       International.<br>
-      <strong>Computer Science</strong> &mdash; {{ site.author.alumni }}.<br>
+      <strong>BS, Computer Science</strong> &mdash; {{ site.author.alumni }}
+      (2010&ndash;2014). Development Head and web developer for the ACM student
+      chapter; Microsoft Student Partner.<br>
       <strong>Microsoft Certified Professional.</strong>
     </p>
     <p>
