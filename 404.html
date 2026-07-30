@@ -1,13 +1,25 @@
 ---
-layout: default
-title: 404 - Page not found
+layout: base
 permalink: /404.html
+title: Page not found
+description: "That page doesn't exist."
+sitemap: false
 ---
 
-<div class="text-center">
-  <h1>Whoops, this page doesn't exist.</h1>
-  <h1>Move along. (404 error)</h1>
-  <br/>
-
-  <img src="{{ site.baseurl }}/img/404-southpark.jpg" />
+<div class="shell">
+  <div class="page-head prose">
+    <p class="eyebrow">404</p>
+    <h1>That page moved, or never existed.</h1>
+    <p class="lede">
+      This site was rebuilt, so a few old links went away. Here&rsquo;s where
+      everything lives now.
+    </p>
+    <ul>
+      <li><a href="{{ '/resume-help' | relative_url }}">Resume help</a> &mdash; who I help and how</li>
+      <li><a href="{{ '/experience' | relative_url }}">Experience</a> &mdash; roles, impact, and credentials</li>
+      <li><a href="{{ '/projects' | relative_url }}">Projects</a> &mdash; selected work</li>
+      <li><a href="{{ '/about' | relative_url }}">About</a> &mdash; the longer story</li>
+      <li><a href="{{ '/blogs' | relative_url }}">Writing</a></li>
+    </ul>
+  </div>
 </div>

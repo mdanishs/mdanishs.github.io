@@ -1,0 +1,75 @@
+# Roles, newest first. Rendered on /experience and used for the Person
+# schema's `worksFor` / `hasOccupation` fields.
+#
+# `end: ` left blank means "present".
+
+- company: "HireDoc"
+  url: "https://hiredoc.co"
+  role: "Founder"
+  start: "2025"
+  end:
+  location: "Milton, Ontario"
+  summary: >
+    Built and launched an interview-based resume tool for software engineers who
+    moved to Canada or the US. Instead of paraphrasing what is already on the
+    page, it interviews you to surface the impact your resume left out.
+  highlights:
+    - "Shipped the full product solo — interview engine, resume generation, payments, and the diagnostic quiz at quiz.hiredoc.co."
+    - "Grounded the product in 400+ manual resume reviews of internationally trained engineers, so the questions target the gaps that actually cost people interviews."
+    - "Candidates who had gone months without a callback began averaging roughly three interview invitations per week after repositioning."
+
+- company: "Intuit"
+  url: "https://www.intuit.com/"
+  role: "Senior Frontend Engineer"
+  start: "2023"
+  end:
+  location: "Toronto, Ontario"
+  summary: >
+    Senior frontend engineer working on AI-driven customer experiences and the
+    quality infrastructure behind them.
+  highlights:
+    - "Designed AI-driven dynamic onboarding experiences that contributed to $300M in sales."
+    - "Led frontend test automation, cutting a regression cycle from 3 days to 4 hours."
+    - "Built reusable component systems adopted across teams, and ran workshops to level up junior engineers."
+
+- company: "Wave Financial"
+  url: "https://www.waveapps.com/"
+  role: "Full-Stack Engineer"
+  start: "2021"
+  end: "2023"
+  location: "Toronto, Ontario"
+  summary: >
+    Full-stack engineer on the money-in (invoicing) team at Wave, building
+    accounting and bookkeeping tools for small business owners.
+  highlights:
+    - "Built and shipped a cross-platform React Native mobile app serving roughly 1M users."
+    - "Optimized GraphQL and REST APIs powering invoicing flows."
+    - "Led monetization initiatives that moved revenue on the invoicing surface."
+
+- company: "VistaJet"
+  url: "https://www.vistajet.com/"
+  role: "Frontend Engineer"
+  start: "2019"
+  end: "2021"
+  location: "Remote"
+  summary: >
+    Built a highly customizable CMS for a private chartered jet airline, used to
+    run marketing campaigns and the public-facing website.
+  highlights:
+    - "Architected each React component as an independently mountable app so marketers could drag them around a WYSIWYG editor."
+    - "Integrated the React frontend with a .NET content backend."
+
+- company: "Earlier roles"
+  url:
+  role: "Software Engineer → Senior Software Engineer"
+  start: "2013"
+  end: "2019"
+  location: "Karachi, Pakistan"
+  summary: >
+    A decade of product work before moving to Canada — property management
+    platforms, banking tools, mobile apps, and shipped Unity and Cocos2D games.
+  highlights:
+    - "Livable — a property management portal built as three micro-frontends for managers, tenants, and admins, with online rent payments."
+    - "Standard Chartered Bank — a reporting tool with a UI-driven custom query builder, plus an XLSX parser handling millions of records."
+    - "AirMed International — a NativeScript membership app with custom native plugins shared across the team."
+    - "Shipped commercial games including Dolly's Bookworm (Unity) and Battleground (Cocos2D)."

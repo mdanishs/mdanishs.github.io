@@ -1,0 +1,204 @@
+{%- comment -%}
+  Structured data (JSON-LD).
+
+  Everything is emitted as a single @graph so nodes can cross-reference each
+  other by @id. This is what lets a search or answer engine understand that the
+  "Mohammad Danish Siddiqui" on the About page, the author of a blog post, and
+  the founder of HireDoc are all one entity rather than three.
+
+  Values come from _config.yml and _data/, never hardcoded here, so the copy on
+  the page and the machine-readable claims cannot drift apart.
+
+  Pages opt into extra nodes via front matter:
+    faq: true          -> FAQPage built from _data/faq.yml
+    profile-page: true -> ProfilePage
+    offers: true       -> HireDoc Product with price tiers
+{%- endcomment -%}
+
+{%- assign person_id = site.url | append: "/#person" -%}
+{%- assign site_id = site.url | append: "/#website" -%}
+{%- assign canonical = page.url | replace: 'index.html', '' | absolute_url -%}
+
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@graph": [
+    {
+      "@type": "Person",
+      "@id": {{ person_id | jsonify }},
+      "name": {{ site.author.name | jsonify }},
+      "alternateName": ["Danish Siddiqui", "Mohammad Danish"],
+      "givenName": "Mohammad Danish",
+      "familyName": "Siddiqui",
+      "url": {{ site.url | jsonify }},
+      "image": {{ site.author.image | absolute_url | jsonify }},
+      "jobTitle": {{ site.author.job-title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "email": {{ site.author.email | prepend: "mailto:" | jsonify }},
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": {{ site.author.locality | jsonify }},
+        "addressRegion": {{ site.author.region | jsonify }},
+        "addressCountry": "CA"
+      },
+      "alumniOf": {
+        "@type": "CollegeOrUniversity",
+        "name": {{ site.author.alumni | jsonify }}
+      },
+      "hasCredential": {
+        "@type": "EducationalOccupationalCredential",
+        "credentialCategory": "certification",
+        "name": "CDI Certified Resume Analyst",
+        "recognizedBy": {
+          "@type": "Organization",
+          "name": "Career Directors International"
+        }
+      },
+      "knowsAbout": [
+        "React",
+        "React Native",
+        "Next.js",
+        "TypeScript",
+        "Node.js",
+        "GraphQL",
+        "Frontend architecture",
+        "Resume writing for software engineers",
+        "Applicant tracking systems",
+        "North American tech hiring",
+        "Job search for internationally trained engineers"
+      ],
+      "knowsLanguage": ["English", "Urdu"],
+      {%- assign roles = site.data.experience | where_exp: "r", "r.url" -%}
+      {%- if roles.size > 0 %}
+      "worksFor": [
+        {%- for role in roles limit: 2 %}
+        {
+          "@type": "Organization",
+          "name": {{ role.company | jsonify }},
+          "url": {{ role.url | jsonify }}
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ],
+      {%- endif %}
+      "sameAs": [
+        {%- for link in site.social-network-links %}
+        {{ link[1] | jsonify }}{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    },
+    {
+      "@type": "Organization",
+      "@id": "https://hiredoc.co/#organization",
+      "name": {{ site.brand.product-name | jsonify }},
+      "url": {{ site.brand.product-url | jsonify }},
+      "description": "An interview-based resume tool for software engineers who moved to Canada or the United States.",
+      "founder": { "@id": {{ person_id | jsonify }} },
+      "areaServed": ["CA", "US"]
+    },
+    {
+      "@type": "WebSite",
+      "@id": {{ site_id | jsonify }},
+      "url": {{ site.url | jsonify }},
+      "name": {{ site.title | jsonify }},
+      "description": {{ site.description | jsonify }},
+      "inLanguage": "en",
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "copyrightHolder": { "@id": {{ person_id | jsonify }} }
+    },
+    {
+      "@type": {% if page.profile-page %}"ProfilePage"{% else %}"WebPage"{% endif %},
+      "@id": {{ canonical | append: "#webpage" | jsonify }},
+      "url": {{ canonical | jsonify }},
+      "name": {{ page.title | default: site.title | jsonify }},
+      {%- if page.description or page.subtitle %}
+      "description": {{ page.description | default: page.subtitle | strip_html | normalize_whitespace | strip | jsonify }},
+      {%- endif %}
+      "isPartOf": { "@id": {{ site_id | jsonify }} },
+      "about": { "@id": {{ person_id | jsonify }} },
+      {%- if page.profile-page %}
+      "mainEntity": { "@id": {{ person_id | jsonify }} },
+      {%- endif %}
+      "inLanguage": "en",
+      "breadcrumb": { "@id": {{ canonical | append: "#breadcrumb" | jsonify }} }
+    },
+    {
+      "@type": "BreadcrumbList",
+      "@id": {{ canonical | append: "#breadcrumb" | jsonify }},
+      "itemListElement": [
+        {
+          "@type": "ListItem",
+          "position": 1,
+          "name": "Home",
+          "item": {{ site.url | append: "/" | jsonify }}
+        }{% if page.url != "/" and page.url != "/index.html" %},
+        {
+          "@type": "ListItem",
+          "position": 2,
+          "name": {{ page.title | default: "Page" | jsonify }},
+          "item": {{ canonical | jsonify }}
+        }{% endif %}
+      ]
+    }{% if page.faq and site.data.faq %},
+    {
+      "@type": "FAQPage",
+      "@id": {{ canonical | append: "#faq" | jsonify }},
+      "isPartOf": { "@id": {{ canonical | append: "#webpage" | jsonify }} },
+      "mainEntity": [
+        {%- for item in site.data.faq %}
+        {
+          "@type": "Question",
+          "name": {{ item.question | jsonify }},
+          "acceptedAnswer": {
+            "@type": "Answer",
+            "text": {{ item.answer | strip_html | normalize_whitespace | strip | jsonify }}
+          }
+        }{% unless forloop.last %},{% endunless %}
+        {%- endfor %}
+      ]
+    }{% endif %}{% if page.offers %},
+    {
+      "@type": "Product",
+      "@id": "https://hiredoc.co/#product",
+      "name": "HireDoc resume rewrite",
+      "description": "An interview-based resume rewrite for software engineers who moved to Canada or the United States. Surfaces scale, ownership, and measurable impact that a standard rewrite would miss.",
+      "brand": { "@id": "https://hiredoc.co/#organization" },
+      "url": {{ site.brand.product-url | jsonify }},
+      "offers": [
+        {
+          "@type": "Offer",
+          "name": "Self-serve",
+          "price": "49",
+          "priceCurrency": "USD",
+          "url": {{ site.brand.product-url | jsonify }},
+          "availability": "https://schema.org/InStock"
+        },
+        {
+          "@type": "Offer",
+          "name": "With analyst video review",
+          "price": "70",
+          "priceCurrency": "USD",
+          "url": {{ site.brand.product-url | jsonify }},
+          "availability": "https://schema.org/InStock"
+        }
+      ]
+    }{% endif %}{% if page.layout == "post" %},
+    {
+      "@type": "BlogPosting",
+      "@id": {{ canonical | append: "#article" | jsonify }},
+      "headline": {{ page.title | jsonify }},
+      {%- if page.subtitle %}
+      "description": {{ page.subtitle | jsonify }},
+      {%- endif %}
+      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
+      "dateModified": {{ page.last-modified | default: page.date | date_to_xmlschema | jsonify }},
+      "author": { "@id": {{ person_id | jsonify }} },
+      "publisher": { "@id": {{ person_id | jsonify }} },
+      "mainEntityOfPage": { "@id": {{ canonical | append: "#webpage" | jsonify }} },
+      {%- if page.tags.size > 0 %}
+      "keywords": {{ page.tags | join: ", " | jsonify }},
+      {%- endif %}
+      "inLanguage": "en"
+    }{% endif %}
+  ]
+}
+</script>

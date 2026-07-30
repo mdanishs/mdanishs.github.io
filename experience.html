@@ -1,0 +1,103 @@
+---
+layout: base
+permalink: /experience/
+title: Experience
+seo-title: "Experience — Mohammad Danish Siddiqui, Senior Frontend Engineer"
+description: "12+ years of software engineering: AI-driven onboarding contributing to $300M in sales at Intuit, a ~1M user mobile app at Wave Financial, and a CMS for VistaJet. React, React Native, Next.js, Node.js."
+---
+
+<div class="shell">
+
+  <div class="page-head prose">
+    <p class="eyebrow">Experience</p>
+    <h1>{{ site.brand.years-experience }}+ years of shipping things people use.</h1>
+    <p class="lede">
+      Frontend-heavy full-stack work across fintech, aviation, property
+      management, banking, and games &mdash; plus the product I run now.
+    </p>
+  </div>
+
+  <div class="answer">
+    <div class="answer-label">Highlights</div>
+    <p>
+      Designed AI-driven dynamic onboarding experiences that contributed to
+      <strong>$300M in sales</strong>. Built a cross-platform React Native app at
+      Wave Financial serving <strong>roughly 1M users</strong>. Led frontend test
+      automation that cut a regression cycle from <strong>three days to four
+      hours</strong>. Founded <a href="{{ site.brand.product-url }}">HireDoc</a> after
+      {{ site.brand.resumes-reviewed }}+ resume reviews.
+    </p>
+  </div>
+
+  <section>
+    <h2 class="prose">Roles</h2>
+
+    {%- for role in site.data.experience %}
+    <article class="role">
+      <div class="role-when">
+        {{ role.start }}&ndash;{% if role.end %}{{ role.end }}{% else %}Present{% endif %}
+        {%- if role.location %}<span class="role-where">{{ role.location }}</span>{% endif %}
+      </div>
+      <div>
+        <h3>{{ role.role }}</h3>
+        <p class="role-company">
+          {%- if role.url -%}
+            <a href="{{ role.url }}" rel="noopener">{{ role.company }}</a>
+          {%- else -%}
+            {{ role.company }}
+          {%- endif -%}
+        </p>
+        <p>{{ role.summary }}</p>
+        <ul>
+          {%- for point in role.highlights %}
+          <li>{{ point }}</li>
+          {%- endfor %}
+        </ul>
+      </div>
+    </article>
+    {%- endfor %}
+  </section>
+
+  <section class="prose">
+    <h2>What I work with</h2>
+    <p>
+      <strong>Frontend:</strong> React, React Native, Next.js, TypeScript, modern
+      JavaScript, component system design.<br>
+      <strong>Backend:</strong> Node.js, GraphQL, Python and Django, REST API
+      design, microservices.<br>
+      <strong>Quality:</strong> test automation, CI pipelines, data-driven
+      experimentation and A/B testing.<br>
+      <strong>Earlier:</strong> .NET, PHP, Unity 3D, Cocos2D, NativeScript,
+      Android, iOS.
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>Education &amp; credentials</h2>
+    <p>
+      <strong>CDI Certified Resume Analyst</strong> &mdash; Career Directors
+      International.<br>
+      <strong>Computer Science</strong> &mdash; {{ site.author.alumni }}.<br>
+      <strong>Microsoft Certified Professional.</strong>
+    </p>
+    <p>
+      Earlier recognition includes winning Google&rsquo;s Develop for Good hackathon
+      (green category), GameDev&rsquo;12, the Coders Cup junior round, and the Punjab
+      Youth Festival game development competition, plus a top-25 Karachi finish
+      in the Startup Cup.
+    </p>
+  </section>
+
+  <div class="band">
+    <h2>Hiring, or want to compare notes?</h2>
+    <p>
+      I&rsquo;m always happy to talk frontend architecture, test automation, or what a
+      senior engineering resume should actually say.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
+      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mdanishs">Connect on LinkedIn</a>
+    </div>
+  </div>
+
+</div>

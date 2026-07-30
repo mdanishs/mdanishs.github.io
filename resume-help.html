@@ -1,0 +1,185 @@
+---
+layout: base
+permalink: /resume-help/
+title: Resume help for internationally trained engineers
+seo-title: "Resume Help for Internationally Trained Software Engineers in Canada & the US"
+description: "Stalled job search in Canada or the US? A CDI Certified Resume Analyst and senior engineer with 400+ reviews explains why strong engineers get filtered out, and how to fix the positioning."
+faq: true
+offers: true
+---
+
+<div class="shell">
+
+  <div class="page-head prose">
+    <p class="eyebrow">Resume help</p>
+    <h1>You&rsquo;re not underqualified. You&rsquo;re underrepresented.</h1>
+    <p class="lede">
+      For internationally trained software engineers who are already in Canada or
+      the United States, have real senior-level skills, and cannot get a callback.
+    </p>
+  </div>
+
+  <div class="answer">
+    <div class="answer-label">The short version</div>
+    <p>
+      Most engineers who moved to North America are rejected for how their
+      experience is <em>presented</em>, not for the experience itself. North
+      American recruiters screen for business impact &mdash; scale, ownership,
+      architecture decisions, and measurable outcomes &mdash; while most resumes
+      written elsewhere list responsibilities and tenure. Fixing that gap is the
+      fastest lever available, and it does not require new skills, new
+      certifications, or more applications.
+    </p>
+  </div>
+
+  <section class="prose">
+    <h2>Who this is for</h2>
+    <p>
+      One person, specifically: <strong>the internationally trained engineer who
+      is already here and stuck.</strong>
+    </p>
+    <p>
+      You moved. You have real, senior-level skills. And you are watching those
+      skills get discounted &mdash; &ldquo;Canadian experience&rdquo; gatekeeping, credentials
+      that don&rsquo;t translate, a professional network you have to rebuild from
+      zero, and applicant tracking system rejections despite being genuinely good
+      at the work.
+    </p>
+    <p>
+      If that&rsquo;s you, everything below was written for you. If you haven&rsquo;t
+      relocated yet, this isn&rsquo;t the right resource &mdash; the advice for landing a
+      job from abroad is a different problem with a different answer.
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>What actually changes when the positioning is fixed</h2>
+    <p>
+      Candidates who had spent months hearing nothing started averaging around
+      three interview invitations per week after repositioning.
+    </p>
+    <p>
+      Nothing about their experience changed. Nothing about their technical
+      ability changed. The only thing that changed was how they presented
+      themselves.
+    </p>
+    <p>
+      Your resume isn&rsquo;t just a document. It&rsquo;s the first version of your
+      professional story that every recruiter reads. If that story undersells
+      your experience, your application ends before your skills ever get a
+      chance to speak.
+    </p>
+  </section>
+
+  <section>
+    <h2 class="prose">The four things we fix</h2>
+    <div class="cards cards-2">
+      <div class="card">
+        <p class="card-meta">01</p>
+        <h3>Impact over responsibilities</h3>
+        <p>
+          &ldquo;Responsible for the checkout flow&rdquo; becomes what it actually was: the
+          traffic it carried, the revenue it moved, the decision you owned.
+        </p>
+      </div>
+      <div class="card">
+        <p class="card-meta">02</p>
+        <h3>Seniority that reads as seniority</h3>
+        <p>
+          Engineering experience positioned using scale, architecture, ownership,
+          and measurable outcomes &mdash; the four signals North American hiring
+          managers screen on.
+        </p>
+      </div>
+      <div class="card">
+        <p class="card-meta">03</p>
+        <h3>Survivable by the ATS</h3>
+        <p>
+          Structure and language that make it through applicant tracking systems
+          intact, without keyword-stuffing your way into sounding fake.
+        </p>
+      </div>
+      <div class="card">
+        <p class="card-meta">04</p>
+        <h3>A story that holds up in the room</h3>
+        <p>
+          The resume sets up the interview. Everything on it is something you can
+          defend, expand on, and be proud of when someone asks.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <section class="prose" id="hiredoc">
+    <h2>HireDoc: the tool I built for this</h2>
+    <p>
+      After {{ site.brand.resumes-reviewed }}+ manual reviews, the same bottleneck kept showing up. The
+      information that would make someone hireable was never on the page &mdash; it
+      was in their head, and no rewriting tool can find it by paraphrasing what
+      you already wrote.
+    </p>
+    <p>
+      So <a href="{{ site.brand.product-url }}">HireDoc</a> interviews you instead. It
+      asks about your work the way I would in a review, pulls out the impact you
+      forgot to mention, and rebuilds your experience around it.
+    </p>
+  </section>
+
+  <div class="tiers">
+    <div class="tier">
+      <h3>Diagnostic quiz</h3>
+      <p class="price">Free</p>
+      <ul>
+        <li>Three minutes, no signup</li>
+        <li>Scored against how recruiters screen</li>
+        <li>The one gap costing you callbacks</li>
+      </ul>
+      <a class="btn btn-ghost" href="{{ site.brand.quiz-url }}">Take the quiz</a>
+    </div>
+    <div class="tier is-featured">
+      <h3>HireDoc self-serve</h3>
+      <p class="price">$49</p>
+      <ul>
+        <li>Full interview-based rewrite</li>
+        <li>Impact surfaced from your actual work</li>
+        <li>ATS-safe structure</li>
+      </ul>
+      <a class="btn" href="{{ site.brand.product-url }}">Start a rewrite</a>
+    </div>
+    <div class="tier">
+      <h3>With analyst review</h3>
+      <p class="price">$70</p>
+      <ul>
+        <li>Everything in self-serve</li>
+        <li>Async video review from an analyst</li>
+        <li>Positioning notes specific to your target roles</li>
+      </ul>
+      <a class="btn btn-ghost" href="{{ site.brand.product-url }}">Add a review</a>
+    </div>
+  </div>
+
+  <section>
+    <h2 class="prose">Common questions</h2>
+    <div class="faq">
+      {%- for item in site.data.faq %}
+      <details{% if forloop.first %} open{% endif %}>
+        <summary>{{ item.question }}</summary>
+        <p>{{ item.answer | strip_newlines }}</p>
+      </details>
+      {%- endfor %}
+    </div>
+  </section>
+
+  <div class="band">
+    <h2>Start with the free diagnostic</h2>
+    <p>
+      Before you pay anyone anything, find out where you actually stand. Three
+      minutes, and you&rsquo;ll know which part of your resume is doing the damage.
+    </p>
+    <div class="btn-row">
+      <a class="btn" href="{{ site.brand.quiz-url }}">Take the quiz</a>
+      <a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Ask me a question</a>
+    </div>
+  </div>
+
+</div>

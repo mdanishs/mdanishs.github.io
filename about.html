@@ -1,0 +1,120 @@
+---
+layout: base
+permalink: /about/
+title: About Mohammad Danish Siddiqui
+seo-title: "About Mohammad Danish Siddiqui — Senior Frontend Engineer & Resume Analyst"
+description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ years of experience and a CDI Certified Resume Analyst in Milton, Ontario. He founded HireDoc after reviewing 400+ resumes for engineers who moved to North America."
+profile-page: true
+---
+
+<div class="shell">
+
+  <div class="page-head prose">
+    <p class="eyebrow">About</p>
+    <h1>Two lanes, one problem: getting good work seen.</h1>
+  </div>
+
+  <div class="answer">
+    <div class="answer-label">In short</div>
+    <p>
+      <strong>Mohammad Danish Siddiqui</strong> is a senior frontend engineer with
+      {{ site.brand.years-experience }}+ years of experience and a
+      <strong>CDI Certified Resume Analyst</strong> living in Milton, Ontario,
+      Canada. He specializes in React, React Native, Next.js, and Node.js, and has
+      reviewed more than {{ site.brand.resumes-reviewed }} resumes for internationally trained software
+      engineers running a stalled job search in North America. He is the founder of
+      <a href="{{ site.brand.product-url }}">HireDoc</a>.
+    </p>
+  </div>
+
+  <section class="prose">
+    <h2>The engineering lane</h2>
+    <p>
+      I&rsquo;ve been building software professionally for over {{ site.brand.years-experience }} years. Most of
+      that time has been in the frontend &mdash; React, React Native, Next.js,
+      TypeScript &mdash; with enough backend work in Node.js, GraphQL, and Python
+      that I&rsquo;ve never needed to hand a feature off halfway.
+    </p>
+    <p>
+      The work I&rsquo;m proudest of tends to be the unglamorous kind: AI-driven
+      dynamic onboarding that contributed to $300M in sales, a cross-platform
+      mobile app at Wave Financial serving roughly a million users, and a
+      frontend test automation effort that took a regression cycle from three
+      days down to four hours. Reusable components that other teams actually
+      adopt. Workshops that make a junior engineer dangerous in a good way.
+    </p>
+    <p>
+      I like fast-paced environments where I can ship production-quality code
+      quickly and watch it land.
+      <a href="{{ '/experience' | relative_url }}">See the full experience &rarr;</a>
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>The lane I didn&rsquo;t plan on</h2>
+    <p>
+      I moved to Canada as an experienced engineer and learned something
+      uncomfortable: strong skills don&rsquo;t automatically translate. The North
+      American market reads resumes differently than services markets do, and
+      nobody tells you that on the way in. You just apply, and apply, and hear
+      nothing.
+    </p>
+    <p>
+      I figured it out for myself, then started helping other people figure it
+      out. That turned into a CDI Certified Resume Analyst credential, then
+      {{ site.brand.resumes-reviewed }}+ resume reviews for internationally trained engineers stuck in the
+      same loop, then <a href="{{ site.brand.product-url }}">HireDoc</a> &mdash; an
+      interview-based tool that pulls real impact out of your work instead of
+      paraphrasing what&rsquo;s already on the page.
+    </p>
+    <p>
+      It&rsquo;s the same problem as my day job, honestly. Good work is worthless if
+      the person evaluating it can&rsquo;t see it.
+      <a href="{{ '/resume-help' | relative_url }}">More on how I help &rarr;</a>
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>Outside the work</h2>
+    <p>
+      I&rsquo;m originally from Karachi, Pakistan, and studied at the National
+      University of Computer and Emerging Sciences. I started out building games
+      &mdash; Unity, Cocos2D, LibGDX &mdash; and won a handful of hackathons and
+      game jams along the way, including Google&rsquo;s Develop for Good in the green
+      category. That&rsquo;s still where the instinct to just build the thing comes
+      from.
+    </p>
+    <p>
+      I read a lot, mostly about craft, confidence, and how businesses actually
+      work. I write about both of my lanes on
+      <a href="https://www.linkedin.com/in/mdanishs" rel="noopener">LinkedIn</a>,
+      where {{ site.brand.resumes-reviewed }}+ resume reviews have turned into a fairly opinionated
+      body of work on the North American job search.
+    </p>
+  </section>
+
+  <section class="prose">
+    <h2>Get in touch</h2>
+    <p>
+      The fastest way to reach me is email:
+      <a href="mailto:{{ site.author.email }}">{{ site.author.email }}</a>. I read
+      everything, and I answer resume questions for free &mdash; you don&rsquo;t have to
+      buy anything to ask.
+    </p>
+    <p>
+      You can also find me on
+      {%- for link in site.social-network-links %}
+        <a href="{{ link[1] }}" rel="me noopener">{{ link[0] }}</a>{% unless forloop.last %},{% else %}.{% endunless %}
+      {%- endfor %}
+    </p>
+  </section>
+
+  <div class="band">
+    <h2>Working on your own resume right now?</h2>
+    <p>Start with the free diagnostic and find out where you actually stand.</p>
+    <div class="btn-row">
+      <a class="btn" href="{{ site.brand.quiz-url }}">Take the quiz</a>
+    </div>
+  </div>
+
+</div>

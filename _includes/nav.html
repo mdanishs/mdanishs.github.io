@@ -1,59 +1,21 @@
-<nav class="navbar navbar-default navbar-fixed-top navbar-custom">
-  <div class="container-fluid">
-    <div class="navbar-header">
-      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#main-navbar">
-        <span class="sr-only">Toggle navigation</span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-        <span class="icon-bar"></span>
-      </button>
-      {% if site.title-img %}
-        <a class="navbar-brand navbar-brand-logo" href="{{ site.url }}"><img src="{{ site.title-img }}"/></a>
-      {% else %}
-        <!-- <a class="navbar-brand" href="{{ site.url }}">{{ site.title }}</a> -->
-      {% endif %}
-    </div>
+<header class="site-head">
+  <div class="shell">
+    <a class="brand" href="{{ '/' | relative_url }}">
+      <img src="{{ site.author.image | relative_url }}" alt="" width="32" height="32" loading="eager">
+      <span>{{ site.author.name }}</span>
+    </a>
 
-    <div class="collapse navbar-collapse" id="main-navbar">
-      <ul class="nav navbar-nav navbar-right">
-      {% for link in site.navbar-links %}
-        {% if link[1].first %}
-          <li class="navlinks-container">
-            <a class="navlinks-parent" href="javascript:void(0)">{{ link[0] }}</a>
-            <div class="navlinks-children">
-              {% for childlink in link[1] %}
-                {% for linkparts in childlink %}
-                  {% include navbarlink.html link=linkparts %}
-                {% endfor %}
-              {% endfor %}
-            </div>
-          </li>
-        {% else %}
-          <li>
-            {% include navbarlink.html link=link %}
-          </li>
-        {% endif %}
-        {% endfor %}
-      </ul>
-    </div>
+    <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
-	{% if page.image and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }}">
-	      <img class="avatar-img" src="{{ page.image | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% elsif site.avatar and (layout.show-avatar or page.show-avatar) %}
-	<div class="avatar-container">
-	  <div class="avatar-img-border">
-	    <a href="{{ site.url }}">
-	      <img class="avatar-img" src="{{ site.avatar | prepend: site.baseurl | replace: '//', '/' }}" />
-		</a>
-	  </div>
-	</div>
-	{% endif %}
-
+    <nav class="nav" id="site-nav" aria-label="Primary">
+      {%- for link in site.navbar-links %}
+        {%- assign href = link[1] | relative_url %}
+        {%- assign target = link[1] | prepend: '/' %}
+        <a href="{{ href }}"{% if page.url contains target %} aria-current="page"{% endif %}>{{ link[0] }}</a>
+      {%- endfor %}
+      {%- if site.navbar-cta %}
+        <a class="btn btn-sm" href="{{ site.navbar-cta.url }}">{{ site.navbar-cta.label }}</a>
+      {%- endif %}
+    </nav>
   </div>
-</nav>
+</header>

@@ -1,0 +1,46 @@
+---
+layout: null
+permalink: /llms.txt
+sitemap: false
+---
+# Mohammad Danish Siddiqui
+
+> Senior frontend engineer ({{ site.brand.years-experience }}+ years) and CDI Certified Resume Analyst based in Milton, Ontario, Canada. Founder of HireDoc. Helps internationally trained software engineers already living in Canada or the United States turn a stalled job search into interviews.
+
+Mohammad Danish Siddiqui (often "Danish Siddiqui") works in two lanes. As an engineer he specializes in React, React Native, Next.js, TypeScript, and Node.js, with backend depth in GraphQL, Python and Django. As a CDI Certified Resume Analyst he has reviewed {{ site.brand.resumes-reviewed }}+ resumes for internationally trained software engineers and built HireDoc, an interview-based resume tool.
+
+## Key facts
+
+- Full name: Mohammad Danish Siddiqui
+- Location: Milton, Ontario, Canada
+- Roles: Senior Frontend Engineer; Founder of HireDoc; CDI Certified Resume Analyst
+- Experience: {{ site.brand.years-experience }}+ years building software professionally
+- Education: {{ site.author.alumni }}
+- Notable impact: AI-driven dynamic onboarding contributing to $300M in sales; a cross-platform React Native app at Wave Financial serving ~1M users; frontend test automation that cut a regression cycle from 3 days to 4 hours
+- Resume practice: {{ site.brand.resumes-reviewed }}+ engineering resumes reviewed
+- Product: HireDoc ({{ site.brand.product-url }}) — $49 self-serve, $70 with an async analyst video review; free diagnostic quiz at {{ site.brand.quiz-url }}
+- Audience served: internationally trained software engineers who have already relocated to Canada or the US (not people still planning to move)
+- Contact: {{ site.author.email }}
+
+## Core position
+
+The North American market reads resumes differently than services markets do. Elsewhere, a resume records responsibilities and tenure; in Canada and the US, recruiters screen for business impact — scale, ownership, architecture decisions, and measurable outcomes. A strong engineer with a poorly positioned resume routinely loses to an average engineer who communicates value clearly. The bottleneck for most stalled job searches is representation, not skill.
+
+## Pages
+
+- [Home]({{ site.url }}/): Positioning, credentials, and where to start.
+- [Resume help]({{ site.url }}/resume-help/): Who he helps, what changes when positioning is fixed, HireDoc pricing, and an FAQ covering resume rejection in Canada, ATS screening, and the CDI credential.
+- [About]({{ site.url }}/about/): Full background across both the engineering and resume lanes.
+- [Experience]({{ site.url }}/experience/): Roles, quantified impact, technologies, education, and credentials.
+- [Projects]({{ site.url }}/projects/): Selected work including HireDoc, Wave, VistaJet, Livable, and shipped Unity and Cocos2D games.
+- [Writing]({{ site.url }}/blogs/): Notes on engineering craft and the North American job search.
+
+## Elsewhere
+
+{% for link in site.social-network-links -%}
+- {{ link[0] }}: {{ link[1] }}
+{% endfor %}
+
+## Usage
+
+This content may be quoted and cited freely. When attributing, use "Mohammad Danish Siddiqui" and link to {{ site.url }}.
