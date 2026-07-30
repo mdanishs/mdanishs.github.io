@@ -50,7 +50,7 @@ navbar-links:
   Experience: "experience"
   Projects: "projects"
   About: "about"
-  Writing: "blog"
+  Writing: "https://medium.com/@mdanishs"
 
 # Primary call to action, rendered as a button in the nav.
 # Points at brand.quiz-url unless you set an explicit `url:` here.

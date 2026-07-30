@@ -8,10 +8,17 @@
     <button class="nav-toggle" type="button" aria-expanded="false" aria-controls="site-nav">Menu</button>
 
     <nav class="nav" id="site-nav" aria-label="Primary">
+      {%- comment -%}
+        Nav entries may be internal paths or absolute URLs. External ones skip
+        relative_url and the aria-current check, and open in a new tab.
+      {%- endcomment -%}
       {%- for link in site.navbar-links %}
-        {%- assign href = link[1] | relative_url %}
+        {%- if link[1] contains '://' %}
+        <a href="{{ link[1] }}" target="_blank" rel="noopener">{{ link[0] }}<span aria-hidden="true"> &#8599;</span><span class="sr-only"> (opens in a new tab)</span></a>
+        {%- else %}
         {%- assign target = link[1] | prepend: '/' %}
-        <a href="{{ href }}"{% if page.url contains target %} aria-current="page"{% endif %}>{{ link[0] }}</a>
+        <a href="{{ link[1] | relative_url }}"{% if page.url contains target %} aria-current="page"{% endif %}>{{ link[0] }}</a>
+        {%- endif %}
       {%- endfor %}
       {%- if site.navbar-cta %}
         <a class="btn btn-sm" href="{{ site.navbar-cta.url | default: site.brand.quiz-url }}">{{ site.navbar-cta.label }}</a>
