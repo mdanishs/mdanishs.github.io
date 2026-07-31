@@ -1,6 +1,11 @@
 <footer class="site-foot">
   <div class="shell">
-    <nav aria-label="Social">
+    <nav aria-label="Footer">
+      {%- comment -%}
+        /blog/ is not in the main nav (Writing points at Medium), so this is the
+        only sitewide internal link keeping the on-domain posts reachable.
+      {%- endcomment -%}
+      <a href="{{ '/blog' | relative_url }}">Notes</a>
       {%- for link in site.social-network-links %}
       <a href="{{ link[1] }}" rel="me noopener">{{ link[0] }}</a>
       {%- endfor %}
