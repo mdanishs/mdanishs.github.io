@@ -181,10 +181,16 @@ offers: true
   <section>
     <h2 class="prose">Common questions</h2>
     <div class="faq">
+      {%- comment -%}
+        Answers may contain <a href="QUIZ_URL"> / <a href="HIREDOC_URL"> tokens.
+        Resolving them here rather than storing real URLs in _data/faq.yml keeps
+        _config.yml the single source for both. schema.html strips the tags back
+        out, so the JSON-LD answer stays clean prose.
+      {%- endcomment -%}
       {%- for item in site.data.faq %}
       <details{% if forloop.first %} open{% endif %}>
         <summary>{{ item.question }}</summary>
-        <p>{{ item.answer | strip_newlines }}</p>
+        <p>{{ item.answer | strip_newlines | replace: 'QUIZ_URL', site.brand.quiz-url | replace: 'HIREDOC_URL', site.brand.product-url }}</p>
       </details>
       {%- endfor %}
     </div>

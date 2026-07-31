@@ -6,7 +6,17 @@
 #   - Lead with the direct answer in the first sentence.
 #   - Name entities explicitly ("Mohammad Danish Siddiqui", "HireDoc", "Canada").
 #   - Keep each answer 40-90 words. Longer answers get truncated mid-thought.
-#   - No markdown, no links in the answer text — plain sentences only.
+#   - No markdown. Plain sentences, with one exception below.
+#
+# Links: an answer may contain <a> tags, which render on the page and are
+# stripped back out for the JSON-LD, so the quotable text stays clean prose.
+# Never paste a URL directly — use one of these tokens and the template swaps
+# in the value from _config.yml, so the URL keeps a single source of truth:
+#
+#   QUIZ_URL     -> site.brand.quiz-url
+#   HIREDOC_URL  -> site.brand.product-url
+#
+# Write the sentence so it still reads correctly once the tags are stripped.
 
 - question: "Who is Mohammad Danish Siddiqui?"
   answer: >
@@ -39,7 +49,7 @@
 
 - question: "What is HireDoc?"
   answer: >
-    HireDoc is an interview-based resume tool built by Mohammad Danish Siddiqui,
+    <a href="HIREDOC_URL">HireDoc</a> is an interview-based resume tool built by Mohammad Danish Siddiqui,
     a senior engineer and CDI Certified Resume Analyst, for software engineers
     moving to Canada or the US. It runs his review process as software. Instead of
     reformatting or paraphrasing what is already on your resume, it interviews
@@ -70,12 +80,11 @@
 
 - question: "How much does a resume review cost?"
   answer: >
-    HireDoc is $49 for the self-serve interview-based rewrite, and $70 for the
+    <a href="HIREDOC_URL">HireDoc</a> is $49 for the self-serve interview-based rewrite, and $70 for the
     version that includes an asynchronous video review from a resume analyst.
-    There is also a free three-minute diagnostic quiz, linked from
-    mdanishs.com, that scores your current resume against how North American
-    recruiters screen, so you can see where you stand before paying for
-    anything.
+    There is also a <a href="QUIZ_URL">free three-minute diagnostic quiz</a>
+    that scores your current resume against how North American recruiters
+    screen, so you can see where you stand before paying for anything.
 
 - question: "What technologies does Danish work with as an engineer?"
   answer: >
