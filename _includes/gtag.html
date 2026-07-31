@@ -1,11 +1,32 @@
-{% if site.gtag %}
-<!-- Global site tag (gtag.js) - Google Analytics -->
-<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gtag }}"></script>
-    <script>
-          window.dataLayer = window.dataLayer || [];
-  function gtag(){dataLayer.push(arguments);}
-  gtag('js', new Date());
+{%- comment -%}
+  Google Analytics 4.
 
+  Off unless `gtag:` is set in _config.yml, so local builds and forks send
+  nothing. Paste the Measurement ID (G-XXXXXXXXXX) there to switch it on.
+{%- endcomment -%}
+{%- if site.gtag %}
+<script async src="https://www.googletagmanager.com/gtag/js?id={{ site.gtag }}"></script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag() { dataLayer.push(arguments); }
+  gtag('js', new Date());
   gtag('config', '{{ site.gtag }}');
+
+  // Named CTA events.
+  //
+  // GA4 enhanced measurement already logs outbound clicks, but every
+  // conversion on this site is outbound — the quiz, HireDoc, LinkedIn — so
+  // they all land in one undifferentiated bucket. Tagging each button with
+  // data-cta gives it its own label, which is what makes click-through
+  // comparable between, say, the hero CTA and the footer band.
+  document.addEventListener('click', function (e) {
+    var el = e.target && e.target.closest && e.target.closest('[data-cta]');
+    if (!el) return;
+    gtag('event', 'cta_click', {
+      cta: el.getAttribute('data-cta'),
+      link_url: el.getAttribute('href') || '',
+      page_path: location.pathname
+    });
+  });
 </script>
-{% endif %}
+{%- endif %}

@@ -19,8 +19,8 @@ description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ ye
           Canada and the US land interviews.
         </p>
         <div class="btn-row">
-          <a class="btn" href="{{ site.brand.quiz-url }}">Show me why I&rsquo;m not getting callbacks</a>
-          <a class="btn btn-ghost" href="{{ '/resume-help' | relative_url }}">See how I can help</a>
+          <a class="btn" data-cta="home-hero-quiz" href="{{ site.brand.quiz-url }}">Show me why I&rsquo;m not getting callbacks</a>
+          <a class="btn btn-ghost" data-cta="home-hero-help" href="{{ '/resume-help' | relative_url }}">See how I can help</a>
         </div>
         <p class="btn-note">Free &middot; 3 minutes &middot; no signup &middot; instant score</p>
       </div>
@@ -125,7 +125,7 @@ description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ ye
           A diagnostic that grades your resume the way a North American recruiter
           actually reads it, and tells you which gap is costing you callbacks.
         </p>
-        <p><a href="{{ site.brand.quiz-url }}">Get my score &rarr;</a></p>
+        <p><a data-cta="home-card-quiz" href="{{ site.brand.quiz-url }}">Get my score &rarr;</a></p>
       </div>
       <div class="card">
         <p class="card-meta">From $49</p>
@@ -135,7 +135,7 @@ description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ ye
           interview &mdash; it asks about your work instead of paraphrasing the
           page, then rebuilds your experience around the impact you left out.
         </p>
-        <p><a href="{{ '/resume-help' | relative_url }}">See how it works &rarr;</a></p>
+        <p><a data-cta="home-card-hiredoc" href="{{ '/resume-help' | relative_url }}">See how it works &rarr;</a></p>
       </div>
       <div class="card">
         <p class="card-meta">Free</p>
@@ -144,7 +144,7 @@ description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ ye
           I write about both lanes: senior engineering craft, and the North
           American job search for engineers making the move.
         </p>
-        <p><a href="https://medium.com/@mdanishs" rel="noopener">Read on Medium &rarr;</a></p>
+        <p><a data-cta="home-card-medium" href="https://medium.com/@mdanishs" rel="noopener">Read on Medium &rarr;</a></p>
       </div>
     </div>
   </section>
@@ -156,7 +156,7 @@ description: "Mohammad Danish Siddiqui is a senior frontend engineer with 12+ ye
       the one change most likely to get you a callback.
     </p>
     <div class="btn-row">
-      <a class="btn" href="{{ site.brand.quiz-url }}">Score my resume &mdash; free</a>
+      <a class="btn" data-cta="home-band-quiz" href="{{ site.brand.quiz-url }}">Score my resume &mdash; free</a>
       <a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Ask me a question first</a>
     </div>
     <p class="btn-note">3 minutes &middot; no signup &middot; no pitch</p>

@@ -74,12 +74,18 @@ social-network-links:
 url-pretty: "mdanishs.com"
 
 # ---------------------------------------------------------------------------
-# Analytics — fill in when ready
+# Analytics
+#
+# Paste the GA4 Measurement ID below (Admin -> Data streams -> Web, it looks
+# like G-XXXXXXXXXX) and uncomment the line. Nothing loads while it is unset,
+# so local builds and forks stay silent.
+#
+# Beyond GA4's automatic pageviews, every tagged button fires a `cta_click`
+# event carrying a `cta` label — see _includes/gtag.html and the data-cta
+# attributes in the page markup.
 # ---------------------------------------------------------------------------
 
-#gtag: ""
-#google_analytics: ""
-#gtm: ""
+#gtag: "G-XXXXXXXXXX"
 
 # ---------------------------------------------------------------------------
 # Build

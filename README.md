@@ -44,6 +44,25 @@ schema automatically. Write the answer so it makes sense with no surrounding
 context — lead with the direct answer, name entities explicitly, keep it to
 40–90 words.
 
+## Analytics
+
+Uncomment `gtag:` in `_config.yml` and paste the GA4 Measurement ID
+(`G-XXXXXXXXXX`, from Admin → Data streams → Web). Nothing loads while it is
+unset, so local builds and forks send no data.
+
+On top of GA4's automatic pageviews, every call to action carries a
+`data-cta="..."` attribute and fires a **`cta_click`** event with that label.
+GA4's enhanced measurement already logs outbound clicks, but every conversion
+here is outbound — quiz, HireDoc, LinkedIn — so without labels they collapse
+into one bucket. The labels are what make per-CTA click-through comparable.
+
+To see them: **Reports → Engagement → Events → `cta_click`**. Add `cta` as a
+custom dimension (Admin → Custom definitions → Create custom dimension, event
+scope, parameter `cta`) to break the number down per button. Dimensions only
+apply going forward, so create it before you start caring about the data.
+
+To track a new button, add `data-cta="some-label"` to it — no other wiring.
+
 ## Running locally
 
 ```sh

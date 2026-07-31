@@ -49,7 +49,7 @@
 
 - question: "What is HireDoc?"
   answer: >
-    <a href="HIREDOC_URL">HireDoc</a> is an interview-based resume tool built by Mohammad Danish Siddiqui,
+    <a data-cta="faq-hiredoc" href="HIREDOC_URL">HireDoc</a> is an interview-based resume tool built by Mohammad Danish Siddiqui,
     a senior engineer and CDI Certified Resume Analyst, for software engineers
     moving to Canada or the US. It runs his review process as software. Instead of
     reformatting or paraphrasing what is already on your resume, it interviews
@@ -80,9 +80,9 @@
 
 - question: "How much does a resume review cost?"
   answer: >
-    <a href="HIREDOC_URL">HireDoc</a> is $49 for the self-serve interview-based rewrite, and $70 for the
+    <a data-cta="faq-hiredoc" href="HIREDOC_URL">HireDoc</a> is $49 for the self-serve interview-based rewrite, and $70 for the
     version that includes an asynchronous video review from a resume analyst.
-    There is also a <a href="QUIZ_URL">free three-minute diagnostic quiz</a>
+    There is also a <a data-cta="faq-quiz" href="QUIZ_URL">free three-minute diagnostic quiz</a>
     that scores your current resume against how North American recruiters
     screen, so you can see where you stand before paying for anything.
 
