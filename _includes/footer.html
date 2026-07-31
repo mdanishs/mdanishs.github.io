@@ -1,16 +1,30 @@
 <footer class="site-foot">
-  <div class="shell">
-    <nav aria-label="Footer">
-      {%- comment -%}
-        /blog/ is not in the main nav (Writing points at Medium), so this is the
-        only sitewide internal link keeping the on-domain posts reachable.
-      {%- endcomment -%}
-      <a href="{{ '/blog' | relative_url }}">Notes</a>
+  <div class="shell foot-cta">
+    <div class="foot-cta-copy">
+      <h2>Follow along</h2>
+      <p>
+        I post most days on LinkedIn for engineers working a North American job
+        search &mdash; what recruiters actually screen for, and the mistakes I
+        keep finding in reviews.
+      </p>
+    </div>
+    <div class="foot-cta-actions">
+      <a class="btn" href="{{ site.social-network-links.LinkedIn }}" rel="me noopener">
+        Follow on LinkedIn
+      </a>
+      {%- if site.brand.linkedin-followers %}
+      <p class="foot-proof">{{ site.brand.linkedin-followers }} engineers already do</p>
+      {%- endif %}
+    </div>
+  </div>
+
+  <div class="shell foot-meta">
+    <nav aria-label="Elsewhere">
       {%- for link in site.social-network-links %}
       <a href="{{ link[1] }}" rel="me noopener">{{ link[0] }}</a>
       {%- endfor %}
       <a href="mailto:{{ site.author.email }}">Email</a>
     </nav>
-    <p style="margin:0">&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }} &middot; {{ site.author.locality }}, {{ site.author.region }}</p>
+    <p>&copy; {{ 'now' | date: '%Y' }} {{ site.author.name }} &middot; {{ site.author.locality }}, {{ site.author.region }}</p>
   </div>
 </footer>

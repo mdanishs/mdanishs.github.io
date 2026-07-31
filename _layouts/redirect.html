@@ -6,17 +6,25 @@
   Set `permalink` to the OLD url and `redirect_to` to the new one. Kept out of
   the sitemap and marked noindex so the old URL drops out of the index while
   still passing anyone who follows a stale link through to the right page.
+
+  `redirect_to` may be an internal path or an absolute URL; absolute ones are
+  used as-is rather than being prefixed with the site domain.
 {%- endcomment -%}
+{%- if page.redirect_to contains '://' -%}
+  {%- assign destination = page.redirect_to -%}
+{%- else -%}
+  {%- assign destination = page.redirect_to | absolute_url -%}
+{%- endif -%}
 <!DOCTYPE html>
 <html lang="en">
 <head>
   <meta charset="utf-8">
   <title>Redirecting…</title>
-  <link rel="canonical" href="{{ page.redirect_to | absolute_url }}">
+  <link rel="canonical" href="{{ destination }}">
   <meta name="robots" content="noindex, follow">
-  <meta http-equiv="refresh" content="0; url={{ page.redirect_to | absolute_url }}">
+  <meta http-equiv="refresh" content="0; url={{ destination }}">
 </head>
 <body>
-  <p>This page moved to <a href="{{ page.redirect_to | absolute_url }}">{{ page.redirect_to | absolute_url }}</a>.</p>
+  <p>This page moved to <a href="{{ destination }}">{{ destination }}</a>.</p>
 </body>
 </html>

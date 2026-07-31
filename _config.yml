@@ -37,6 +37,9 @@ author:
 brand:
   years-experience: "12"
   resumes-reviewed: "400"
+  # Social proof under the footer follow button. Round down and update
+  # occasionally; leave blank to hide the line entirely.
+  linkedin-followers: "6,400+"
   product-name: "HireDoc"
   product-url: "https://hiredoc.co"
   quiz-url: "https://mohammad-danish-npboaynr.scoreapp.com"
@@ -85,25 +88,9 @@ url-pretty: "mdanishs.com"
 timezone: "America/Toronto"
 markdown: kramdown
 highlighter: rouge
-permalink: /blog/:title/
-excerpt_length: 45
 
 kramdown:
   input: GFM
-
-# Only posts get a default layout. Every page declares its own, because a
-# blanket `layout: page` default also wraps robots.txt / llms.txt / feed.xml in
-# HTML — front-matter `layout: null` does not win against a Jekyll default.
-defaults:
-  -
-    scope:
-      path: ""
-      type: "posts"
-    values:
-      layout: "post"
-      social-share: true
-
-link-tags: true
 
 exclude:
   - CHANGELOG.md
