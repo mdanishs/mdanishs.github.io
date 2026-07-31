@@ -15,7 +15,6 @@ Most changes don't require touching HTML:
 | Name, tagline, nav, social links, HireDoc URLs, headline numbers | `_config.yml` |
 | Roles and impact bullets on `/experience/` | `_data/experience.yml` |
 | FAQ on `/resume-help/` (also feeds FAQ structured data) | `_data/faq.yml` |
-| Blog posts | `_posts/` |
 
 The numbers in `_config.yml` under `brand:` (years of experience, resumes
 reviewed) are interpolated into page copy, so updating them there updates them

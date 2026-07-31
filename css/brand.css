@@ -349,6 +349,17 @@ main {
   flex-wrap: wrap;
   gap: 0.75rem;
   margin: 1.8rem 0 0;
+  align-items: center;
+}
+
+/* Friction-reducing microcopy under a primary CTA ("Free · 3 minutes · …"). */
+.btn-note {
+  margin: 0.8rem 0 0;
+  font-size: 0.84rem;
+  color: var(--ink-faint);
+}
+.band .btn-note {
+  text-align: center;
 }
 
 /* --------------------------------------------------------------------------
@@ -740,15 +751,56 @@ main {
 
 .site-foot {
   border-top: 1px solid var(--rule);
-  padding: 2.5rem 0 3rem;
+  margin-top: 4rem;
   font-size: 0.9rem;
   color: var(--ink-faint);
 }
-.site-foot .shell {
+
+/* Follow block — the one place on every page asking for a social follow. */
+.foot-cta {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 1.5rem 3rem;
+  align-items: center;
+  justify-content: space-between;
+  padding-top: 3rem;
+  padding-bottom: 2.5rem;
+}
+.foot-cta-copy {
+  max-width: 46ch;
+}
+.foot-cta h2 {
+  margin: 0 0 0.35rem;
+  font-size: 1.4rem;
+}
+.foot-cta p {
+  margin: 0;
+  color: var(--ink-soft);
+  font-size: 0.95rem;
+}
+.foot-cta-actions {
+  text-align: center;
+}
+.foot-cta-actions .btn {
+  white-space: nowrap;
+}
+.foot-proof {
+  margin: 0.6rem 0 0;
+  font-size: 0.82rem;
+  color: var(--ink-faint);
+}
+
+.foot-meta {
   display: flex;
   flex-wrap: wrap;
   gap: 1rem 1.75rem;
   align-items: center;
+  border-top: 1px solid var(--rule);
+  padding-top: 1.75rem;
+  padding-bottom: 3rem;
+}
+.foot-meta p {
+  margin: 0;
 }
 .site-foot nav {
   display: flex;
@@ -756,12 +808,18 @@ main {
   gap: 1.25rem;
   margin-right: auto;
 }
-.site-foot a {
+.site-foot a:not(.btn) {
   color: var(--ink-soft);
   text-decoration: none;
 }
-.site-foot a:hover {
+.site-foot a:not(.btn):hover {
   color: var(--accent);
+}
+
+@media (max-width: 620px) {
+  .foot-cta-actions {
+    text-align: left;
+  }
 }
 
 /* --------------------------------------------------------------------------

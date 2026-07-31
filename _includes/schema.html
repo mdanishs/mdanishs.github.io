@@ -3,8 +3,8 @@
 
   Everything is emitted as a single @graph so nodes can cross-reference each
   other by @id. This is what lets a search or answer engine understand that the
-  "Mohammad Danish Siddiqui" on the About page, the author of a blog post, and
-  the founder of HireDoc are all one entity rather than three.
+  "Mohammad Danish Siddiqui" on the About page and the founder of HireDoc are
+  one entity rather than two.
 
   Values come from _config.yml and _data/, never hardcoded here, so the copy on
   the page and the machine-readable claims cannot drift apart.
@@ -181,23 +181,6 @@
           "availability": "https://schema.org/InStock"
         }
       ]
-    }{% endif %}{% if page.layout == "post" %},
-    {
-      "@type": "BlogPosting",
-      "@id": {{ canonical | append: "#article" | jsonify }},
-      "headline": {{ page.title | jsonify }},
-      {%- if page.subtitle %}
-      "description": {{ page.subtitle | jsonify }},
-      {%- endif %}
-      "datePublished": {{ page.date | date_to_xmlschema | jsonify }},
-      "dateModified": {{ page.last-modified | default: page.date | date_to_xmlschema | jsonify }},
-      "author": { "@id": {{ person_id | jsonify }} },
-      "publisher": { "@id": {{ person_id | jsonify }} },
-      "mainEntityOfPage": { "@id": {{ canonical | append: "#webpage" | jsonify }} },
-      {%- if page.tags.size > 0 %}
-      "keywords": {{ page.tags | join: ", " | jsonify }},
-      {%- endif %}
-      "inLanguage": "en"
     }{% endif %}
   ]
 }
