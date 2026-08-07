@@ -15,6 +15,14 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
       Frontend-heavy full-stack work across fintech, travel, property
       management, banking, and games &mdash; plus the product I run now.
     </p>
+    {%- if site.brand.resume-url %}
+    <div class="btn-row">
+      <a class="btn" href="{{ site.brand.resume-url | escape }}" target="_blank" rel="noopener">
+        Download my resume<span class="sr-only"> (PDF, opens in a new tab)</span>
+      </a>
+      <a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Email me</a>
+    </div>
+    {%- endif %}
   </div>
 
   <div class="answer">
@@ -101,8 +109,15 @@ description: "12+ years of software engineering: AI-driven onboarding contributi
       senior engineering resume should actually say.
     </p>
     <div class="btn-row">
+      {%- if site.brand.resume-url %}
+      <a class="btn" href="{{ site.brand.resume-url | escape }}" target="_blank" rel="noopener">
+        Download my resume<span class="sr-only"> (PDF, opens in a new tab)</span>
+      </a>
+      <a class="btn btn-ghost" href="mailto:{{ site.author.email }}">Email me</a>
+      {%- else %}
       <a class="btn" href="mailto:{{ site.author.email }}">Email me</a>
-      <a class="btn btn-ghost" href="https://www.linkedin.com/in/mdanishs">Connect on LinkedIn</a>
+      {%- endif %}
+      <a class="btn btn-ghost" href="{{ site.social-network-links.LinkedIn }}" rel="noopener">Connect on LinkedIn</a>
     </div>
   </div>
 

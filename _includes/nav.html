@@ -20,6 +20,22 @@
         <a href="{{ link[1] | relative_url }}"{% if page.url contains target %} aria-current="page"{% endif %}>{{ link[0] }}</a>
         {%- endif %}
       {%- endfor %}
+      {%- if site.brand.resume-url %}
+        {%- comment -%}
+          Kept out of navbar-links so it can carry the download affordance and
+          its own screen-reader text, rather than the generic external-link
+          treatment above.
+        {%- endcomment -%}
+        <a class="nav-resume" href="{{ site.brand.resume-url | escape }}" target="_blank" rel="noopener">
+          <svg viewBox="0 0 16 16" fill="none" stroke="currentColor" stroke-width="1.6"
+               stroke-linecap="round" stroke-linejoin="round" aria-hidden="true" focusable="false">
+            <path d="M8 1.75v8.25"/>
+            <path d="M4.6 6.9 8 10.3l3.4-3.4"/>
+            <path d="M2.25 11.9v1.35c0 .55.45 1 1 1h9.5c.55 0 1-.45 1-1V11.9"/>
+          </svg>
+          Resume<span class="sr-only"> (PDF, opens in a new tab)</span>
+        </a>
+      {%- endif %}
       {%- if site.navbar-cta %}
         <a class="btn btn-sm" href="{{ site.navbar-cta.url | default: site.brand.quiz-url }}">{{ site.navbar-cta.label }}</a>
       {%- endif %}
