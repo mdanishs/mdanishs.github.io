@@ -43,6 +43,11 @@ brand:
   product-name: "HireDoc"
   product-url: "https://hiredoc.co"
   quiz-url: "https://mohammad-danish-npboaynr.scoreapp.com"
+  # Public resume, hosted on Google Drive so it can be swapped without a site
+  # rebuild — replace the file in Drive and every link here stays correct.
+  # This is the direct-download form of the URL; the /file/d/<id>/view form
+  # opens the Drive preview instead if you'd rather people read it in place.
+  resume-url: "https://drive.google.com/uc?export=download&id=1oqCVYgLdbU-Um2__LEIP-9QL-IuoYKxf"
 
 # ---------------------------------------------------------------------------
 # Navigation
