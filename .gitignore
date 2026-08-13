@@ -2,6 +2,10 @@
 _site
 .sass-cache
 .vagrant
+# Left untracked on purpose: the Gemfile is unpinned so `bundle install`
+# tracks whatever GitHub Pages is running. Committing a lockfile would pin
+# local builds to one resolution and defeat that.
+Gemfile.lock
 
 # general
 .DS_Store
