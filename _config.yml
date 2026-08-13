@@ -42,6 +42,18 @@ brand:
   linkedin-followers: "6,400+"
   product-name: "HireDoc"
   product-url: "https://hiredoc.co"
+  # Product image for the HireDoc JSON-LD on /resume-help/. Google treats
+  # `image` as required on Product markup, so this must resolve to a crawlable
+  # file. Swap in a real HireDoc screenshot when there is one; a square or 4:3
+  # crop is what Google prefers.
+  product-image: "/img/og-card.png"
+  # Real, verifiable rating for HireDoc. Google lists aggregateRating as a
+  # non-critical missing field on the Product markup, but publishing a rating
+  # you cannot back up with real reviews breaks their structured data policy.
+  # Uncomment and fill in only once the numbers are genuine.
+  # product-rating:
+  #   value: "4.9"
+  #   count: "37"
   quiz-url: "https://mohammad-danish-npboaynr.scoreapp.com"
   # Public resume, hosted on Google Drive so it can be swapped without a site
   # rebuild — replace the file in Drive and every link here stays correct.
@@ -54,7 +66,7 @@ brand:
 # ---------------------------------------------------------------------------
 
 navbar-links:
-  Resume Help: "resume-help"
+  Resume Help: "resume-help/"
   Experience: "experience"
   Projects: "projects"
   About: "about"
